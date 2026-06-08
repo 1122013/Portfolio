@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁開發作品 | Web Design</title>
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/ux-work.css">
+</head>
+
+<body data-work-type="web-design">
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar" type="button" data-href="../../index.html" data-page="首頁">首頁</button>
+            <button class="headerBar" type="button" data-href="../../index.html#sec-stack" data-page="關於">關於</button>
+            <button class="headerBar active" type="button" data-href="../../index.html#sec-projects"
+                data-page="作品">作品</button>
+            <button class="headerBar" type="button" data-href="../../index.html#contacts" data-page="聯絡">聯絡</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">作品</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem" type="button" data-href="../../index.html" data-page="首頁"><span>首頁</span><span
+                class="menuIcon">01</span></button>
+        <button class="menuItem" type="button" data-href="../../index.html#sec-stack" data-page="關於"><span>關於</span><span
+                class="menuIcon">02</span></button>
+        <button class="menuItem active" type="button" data-href="../../index.html#sec-projects"
+            data-page="作品"><span>作品</span><span class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="../../index.html#contacts" data-page="聯絡"><span>聯絡</span><span
+                class="menuIcon">04</span></button>
+    </nav>
+
+    <main class="work-page">
+        <a class="back-link" href="../../index.html#sec-projects">← 返回作品</a>
+
+        <section class="ux-hero" aria-labelledby="work-title">
+            <div>
+                <p class="eyebrow">Web Development</p>
+                <h1 id="work-title">教育平台網頁開發</h1>
+                <p class="hero-lead">
+                    本作品以教學管理與學生學習流程為核心，整理首頁、班級、教材、影片、題目練習與進度追蹤等頁面。介面設計重視資訊層級、操作路徑與不同角色的使用情境，讓老師能快速管理課程，也讓學生能順暢完成學習任務。
+                </p>
+                <div class="project-meta" aria-label="專案資訊">
+                    <div class="meta-item">
+                        <span>Role</span>
+                        <strong>Frontend</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Scope</span>
+                        <strong>Website UI</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Focus</span>
+                        <strong>學習流程</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-stage mockup-stage-fan mockup-stage-web" data-ui-showcase="fan"
+                aria-label="網頁開發桌機畫面展示">
+                <div class="fan-scene" data-fan-scene>
+                    <article class="fan-note fan-note-problem" data-fan-panel="problem">
+                        <span>Page</span>
+                        <strong>首頁導覽</strong>
+                        <p>將學生與老師常用入口集中，讓使用者一進站就能判斷下一步。</p>
+                    </article>
+
+                    <div class="fan-track" data-fan-track>
+                        <figure class="fan-card" data-problem-title="首頁導覽"
+                            data-problem-copy="將課程、教材與登入後任務入口集中，降低首次進入網站的判斷成本。"
+                            data-goal-title="清楚的第一屏" data-goal-copy="用明確區塊建立頁面節奏，讓平台功能更容易被掃描。">
+                            <img src="../../IMGS/works_webDesign/教育_首頁.png" alt="教育平台首頁">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="學生尋找班級"
+                            data-problem-copy="學生需要快速找到所屬班級與目前可進入的學習內容。"
+                            data-goal-title="班級入口整理" data-goal-copy="以卡片和狀態標籤呈現班級，減少來回查找。">
+                            <img src="../../IMGS/works_webDesign/教育_學生尋找班級.png" alt="學生尋找班級頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="學生觀看影片"
+                            data-problem-copy="影片學習需要兼顧觀看、章節切換與後續任務提示。"
+                            data-goal-title="沉浸式學習" data-goal-copy="讓影片成為視覺主軸，周邊保留必要操作。">
+                            <img src="../../IMGS/works_webDesign/教育_學生看影片.png" alt="學生觀看影片頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="學生做題目"
+                            data-problem-copy="練習頁需要清楚呈現題目、作答狀態與回饋，避免學習中斷。"
+                            data-goal-title="穩定作答流程" data-goal-copy="將主要作答區與輔助資訊分層，讓操作更專注。">
+                            <img src="../../IMGS/works_webDesign/教育_學生做題目.png" alt="學生做題目頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="老師選擇教材"
+                            data-problem-copy="老師需要快速瀏覽教材分類，並判斷適合的課程內容。"
+                            data-goal-title="教材管理效率" data-goal-copy="以清楚的分類和預覽資訊縮短挑選時間。">
+                            <img src="../../IMGS/works_webDesign/教育_老師選擇教材.png" alt="老師選擇教材頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="老師管理班級"
+                            data-problem-copy="班級管理包含學生、任務與進度，資訊容易堆疊。"
+                            data-goal-title="管理資訊分層" data-goal-copy="把班級狀態、操作與列表分區，提升重複使用效率。">
+                            <img src="../../IMGS/works_webDesign/教育_老師管理班級.png" alt="老師管理班級頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="老師查看進度"
+                            data-problem-copy="進度資料需要能快速比較班級整體與個別學生表現。"
+                            data-goal-title="資料可讀性" data-goal-copy="用表格、數值與狀態色幫助老師快速判斷。">
+                            <img src="../../IMGS/works_webDesign/教育_老師看進度.png" alt="老師查看進度頁面">
+                        </figure>
+                    </div>
+
+                    <article class="fan-note fan-note-goal" data-fan-panel="goal">
+                        <span>Goal</span>
+                        <strong>清楚的第一屏</strong>
+                        <p>用明確區塊建立頁面節奏，讓平台功能更容易被掃描。</p>
+                    </article>
+
+                    <div class="fan-controls" aria-label="切換展示頁面">
+                        <button class="fan-nav" type="button" data-fan-prev aria-label="上一個頁面">←</button>
+                        <button class="fan-nav" type="button" data-fan-next aria-label="下一個頁面">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <div>
+                <section class="work-section" aria-labelledby="intro-title">
+                    <div class="section-title">
+                        <p>Overview</p>
+                        <h2 id="intro-title">開發介紹</h2>
+                    </div>
+                    <p class="body-copy">
+                        這個網頁作品聚焦在教育平台的角色分流與任務流程。頁面規劃從首頁入口開始，延伸到學生端的班級查找、影片觀看、題目練習，以及老師端的教材選擇、班級管理與進度查看。
+                    </p>
+                    <ul class="feature-list">
+                        <li>整理學生與老師的主要操作入口。</li>
+                        <li>建立教材、班級、影片、題目與進度的資訊層級。</li>
+                        <li>透過一致的卡片、列表與狀態標籤維持操作節奏。</li>
+                        <li>讓桌機畫面保留足夠資訊密度，同時兼顧 RWD 呈現。</li>
+                    </ul>
+                </section>
+
+              
+                <section class="work-section" aria-labelledby="ia-title">
+                    <div class="section-title">
+                        <p>Information Architecture</p>
+                        <h2 id="ia-title">資訊架構圖</h2>
+                    </div>
+                    <div class="diagram-frame">
+                       <img src="../../IMGS/works_webDesign/教育架構圖.png ">
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="mockup-title">
+                    <div class="section-title">
+                        <p>Mockup</p>
+                        <h2 id="mockup-title">流程圖</h2>
+                    </div>
+                    <div class="blueprint">
+                        <img src="../../IMGS/works_webDesign/教育流程圖.png" alt="教育平台網頁 Mockup">
+                    </div>
+                </section>
+
+               
+            </div>
+
+            <aside class="side-panel" aria-label="專案摘要">
+                <div class="summary-card">
+                    <h3>設計目標</h3>
+                    <p>建立清楚的學習平台畫面，讓不同角色都能快速進入自己的任務流程。</p>
+                </div>
+                <div class="summary-card">
+                    <h3>核心功能</h3>
+                    <ul>
+                        <li>首頁入口整理</li>
+                        <li>教材與班級管理</li>
+                        <li>影片與題目流程</li>
+                        <li>學習進度追蹤</li>
+                    </ul>
+                </div>
+                <div class="summary-card">
+                    <h3>外部連結</h3>
+                    <div class="side-actions">
+                        <a class="side-action side-action-primary" href="#" target="_blank" rel="noopener noreferrer">前往網站</a>
+                    </div>
+                </div>
+                <a class="side-action side-action-return" href="../../index.html#sec-projects">← 返回作品</a>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../../JS/header.js"></script>
+    <script>
+        const fanShowcase = document.querySelector('[data-ui-showcase="fan"]');
+        const fanTrack = fanShowcase?.querySelector('[data-fan-track]');
+        const fanCards = Array.from(fanShowcase?.querySelectorAll('.fan-card') || []);
+        const fanPrev = fanShowcase?.querySelector('[data-fan-prev]');
+        const fanNext = fanShowcase?.querySelector('[data-fan-next]');
+        const fanProblemPanel = fanShowcase?.querySelector('[data-fan-panel="problem"]');
+        const fanGoalPanel = fanShowcase?.querySelector('[data-fan-panel="goal"]');
+        let fanIndex = 0;
+        let fanDragging = false;
+        let fanDidDrag = false;
+        let fanStartX = 0;
+        let fanStartY = 0;
+        let fanTurnTimer;
+
+        function setFanPanel(panel, label, title, copy) {
+            if (!panel) return;
+            panel.classList.remove('is-changing');
+            void panel.offsetWidth;
+            panel.querySelector('span').textContent = label;
+            panel.querySelector('strong').textContent = title || '';
+            panel.querySelector('p').textContent = copy || '';
+            panel.classList.add('is-changing');
+        }
+
+        function updateFanPanels() {
+            const activeCard = fanCards[fanIndex];
+            if (!activeCard) return;
+            setFanPanel(fanProblemPanel, 'Page', activeCard.dataset.problemTitle, activeCard.dataset.problemCopy);
+            setFanPanel(fanGoalPanel, 'Goal', activeCard.dataset.goalTitle, activeCard.dataset.goalCopy);
+        }
+
+        function renderFan() {
+            fanCards.forEach((card, index) => {
+                const offset = (index - fanIndex + fanCards.length) % fanCards.length;
+                card.dataset.fan = offset < 5 ? String(offset) : 'hidden';
+            });
+            updateFanPanels();
+        }
+
+        function moveFan(step) {
+            if (!fanCards.length) return;
+            window.clearTimeout(fanTurnTimer);
+            fanShowcase?.classList.add('is-fan-ready');
+            fanTrack?.classList.add('is-turning');
+            fanIndex = (fanIndex + step + fanCards.length) % fanCards.length;
+            renderFan();
+            fanTurnTimer = window.setTimeout(() => {
+                fanTrack?.classList.remove('is-turning');
+            }, 820);
+        }
+
+        fanPrev?.addEventListener('click', () => moveFan(-1));
+        fanNext?.addEventListener('click', () => moveFan(1));
+
+        fanTrack?.addEventListener('pointerdown', e => {
+            if (e.target.closest('button')) return;
+            fanDragging = true;
+            fanDidDrag = false;
+            fanStartX = e.clientX;
+            fanStartY = e.clientY;
+            fanTrack.classList.add('is-dragging');
+            fanTrack.setPointerCapture(e.pointerId);
+        });
+
+        fanTrack?.addEventListener('pointermove', e => {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            const dy = e.clientY - fanStartY;
+            if (Math.abs(dx) > 16 && Math.abs(dx) > Math.abs(dy)) fanDidDrag = true;
+        });
+
+        function endFanDrag(e) {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            fanDragging = false;
+            fanTrack.classList.remove('is-dragging');
+            if (fanDidDrag && Math.abs(dx) > 44) moveFan(dx > 0 ? -1 : 1);
+        }
+
+        fanTrack?.addEventListener('pointerup', endFanDrag);
+        fanTrack?.addEventListener('pointercancel', endFanDrag);
+
+        renderFan();
+        window.setTimeout(() => {
+            fanShowcase?.classList.add('is-fan-ready');
+        }, 980);
+
+        const revealTargets = [
+            ...document.querySelectorAll('.work-section'),
+            ...document.querySelectorAll('.side-panel .summary-card'),
+            document.querySelector('.side-panel .side-action-return')
+        ].filter(Boolean);
+
+        document.documentElement.classList.add('reveal-ready');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: '0px 0px -12% 0px'
+            });
+
+            revealTargets.forEach((target) => revealObserver.observe(target));
+        } else {
+            revealTargets.forEach((target) => target.classList.add('is-visible'));
+        }
+    </script>
+</body>
+
+</html>

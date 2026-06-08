@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海蔚護鯨 | Web Design</title>
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/ux-work.css">
+</head>
+
+<body data-work-type="web-design">
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar" type="button" data-href="../../index.html" data-page="首頁">首頁</button>
+            <button class="headerBar" type="button" data-href="../../index.html#sec-stack" data-page="關於">關於</button>
+            <button class="headerBar active" type="button" data-href="../../index.html#sec-projects"
+                data-page="作品">作品</button>
+            <button class="headerBar" type="button" data-href="../../index.html#contacts" data-page="聯絡">聯絡</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">作品</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem" type="button" data-href="../../index.html" data-page="首頁"><span>首頁</span><span
+                class="menuIcon">01</span></button>
+        <button class="menuItem" type="button" data-href="../../index.html#sec-stack" data-page="關於"><span>關於</span><span
+                class="menuIcon">02</span></button>
+        <button class="menuItem active" type="button" data-href="../../index.html#sec-projects"
+            data-page="作品"><span>作品</span><span class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="../../index.html#contacts" data-page="聯絡"><span>聯絡</span><span
+                class="menuIcon">04</span></button>
+    </nav>
+
+    <main class="work-page">
+        <a class="back-link" href="../../index.html#sec-projects">← 返回作品</a>
+
+        <section class="ux-hero" aria-labelledby="work-title">
+            <div>
+                <p class="eyebrow">Web Design / Conservation</p>
+                <h1 id="work-title">海蔚護鯨</h1>
+                <p class="hero-lead">
+                    以 SDGs 14 海洋保育為主題的鯨豚保育網站。作品透過開場動畫、首頁互動、鯨魚危機介紹、資料庫與友善賞鯨活動頁面，讓使用者理解鯨魚對海洋的重要性，也能找到保育活動與賞鯨資訊。
+                </p>
+                <div class="project-meta" aria-label="專案資訊">
+                    <div class="meta-item">
+                        <span>Role</span>
+                        <strong>Frontend / Web UI</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Scope</span>
+                        <strong>Conservation Website</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Focus</span>
+                        <strong>互動導覽與資料整合</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-stage mockup-stage-fan mockup-stage-web" data-ui-showcase="fan"
+                aria-label="海蔚護鯨網頁展示">
+                <div class="fan-scene" data-fan-scene>
+                    <article class="fan-note fan-note-problem" data-fan-panel="problem">
+                        <span>Page</span>
+                        <strong>首頁導覽</strong>
+                        <p>以海洋視覺與鯨魚動畫建立第一印象，帶出保育議題。</p>
+                    </article>
+
+                    <div class="fan-track" data-fan-track>
+                        <figure class="fan-card" data-problem-title="首頁導覽"
+                            data-problem-copy="以鯨魚、海浪與藍色系視覺建立網站主題，讓使用者從入口就感受到海洋保育氛圍。"
+                            data-goal-title="清楚建立主題" data-goal-copy="用動畫與視覺敘事連接首頁、鯨魚危機與後續分頁，降低使用者理解成本。">
+                            <img src="../../IMGS/works_webDesign/鯨魚_首頁.png" alt="海蔚護鯨首頁畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="活動搜尋"
+                            data-problem-copy="賞鯨與保育活動資訊如果分散，使用者很難快速找到適合自己的活動。"
+                            data-goal-title="快速篩選活動" data-goal-copy="加入搜尋欄與橫向瀏覽，讓活動卡片能依關鍵字快速收斂。">
+                            <img src="../../IMGS/works_webDesign/鯨魚_搜尋活動.png" alt="海蔚護鯨活動搜尋頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="活動介紹"
+                            data-problem-copy="使用者參與賞鯨前，需要清楚知道流程、注意事項與活動內容。"
+                            data-goal-title="降低報名疑慮" data-goal-copy="用分段介紹與圖片展示活動資訊，讓報名前的判斷更直覺。">
+                            <img src="../../IMGS/works_webDesign/鯨魚_賞鯨活動介紹.png" alt="海蔚護鯨賞鯨活動介紹頁">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="賞鯨活動"
+                            data-problem-copy="活動流程需要具備沉浸感，同時讓表單與價格資訊保持易讀。"
+                            data-goal-title="結合情境與報名" data-goal-copy="用第一人稱賞鯨視角、互動表單與活動照片，形成完整參與流程。">
+                            <img src="../../IMGS/works_webDesign/鯨魚_賞鯨活動2.png" alt="海蔚護鯨賞鯨活動頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="鯨魚資料庫"
+                            data-problem-copy="鯨魚種類與資料若只以長篇文字呈現，青少年使用者容易失去耐心。"
+                            data-goal-title="整理知識入口" data-goal-copy="將鯨魚資料轉成可瀏覽的資料庫頁，支援使用者用分類方式認識物種。">
+                            <img src="../../IMGS/works_webDesign/鯨魚_資料庫.png" alt="海蔚護鯨鯨魚資料庫頁面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="漫畫知識"
+                            data-problem-copy="海洋保育議題較嚴肅，直接說明容易讓內容距離感太高。"
+                            data-goal-title="用故事降低門檻" data-goal-copy="以漫畫格與互動放大效果介紹鯨魚幫浦，讓知識更容易被記住。">
+                            <img src="../../IMGS/works_webDesign/鯨魚_漫畫.png" alt="海蔚護鯨漫畫知識頁面">
+                        </figure>
+                    </div>
+
+                    <article class="fan-note fan-note-goal" data-fan-panel="goal">
+                        <span>Goal</span>
+                        <strong>清楚建立主題</strong>
+                        <p>用動畫與視覺敘事連接首頁、鯨魚危機與後續分頁。</p>
+                    </article>
+
+                    <div class="fan-controls" aria-label="切換展示圖片">
+                        <button class="fan-nav" type="button" data-fan-prev aria-label="上一張">←</button>
+                        <button class="fan-nav" type="button" data-fan-next aria-label="下一張">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <div>
+                <section class="work-section" aria-labelledby="intro-title">
+                    <div class="section-title">
+                        <p>Overview</p>
+                        <h2 id="intro-title">網站介紹</h2>
+                    </div>
+                    <p class="body-copy">
+                        海蔚護鯨以「台灣是海島國家」作為出發點，聚焦海洋污染、混獲、商業捕鯨與鯨豚保育議題。網站採藍色調與鯨魚 Logo，搭配大量互動與動畫，希望讓 14 到 18 歲青少年、學校團體與想參與保育活動的人，更容易理解鯨魚的處境與重要性。
+                    </p>
+                    <ul class="feature-list">
+                        <li>首頁以鯨魚被漁網纏繞的動畫帶入危機情境，接續呈現鯨魚面臨的真實問題。</li>
+                        <li>以漫畫格、氣泡與 hover 放大互動介紹鯨魚幫浦，讓知識內容更有記憶點。</li>
+                        <li>活動區加入搜尋欄與橫向滾動卡片，讓使用者快速找到保育與賞鯨活動。</li>
+                        <li>資料庫與賞鯨頁整合表格、表單、圖片放大與滾輪動畫，讓內容不只停留在靜態閱讀。</li>
+                    </ul>
+                </section>
+
+             
+                <section class="work-section" aria-labelledby="ia-title">
+                    <div class="section-title">
+                        <p>Information Architecture</p>
+                        <h2 id="ia-title">資訊架構圖</h2>
+                    </div>
+                    <div class="blueprint">
+                        <img src="../../IMGS/works_webDesign/鯨魚架構圖.png" alt="海蔚護鯨網站架構圖">
+                    </div>
+                </section>
+
+              
+            </div>
+
+            <aside class="side-panel" aria-label="專案重點">
+                <div class="summary-card">
+                    <h3>設計目標</h3>
+                    <p>把鯨魚保育知識、活動搜尋、賞鯨報名與物種資料整合成同一個清楚的網站入口，讓使用者能從互動中理解議題。</p>
+                </div>
+                <div class="summary-card">
+                    <h3>核心功能</h3>
+                    <ul>
+                        <li>首頁動畫與危機導覽</li>
+                        <li>鯨魚知識漫畫</li>
+                        <li>保育活動搜尋</li>
+                        <li>賞鯨活動與報名表單</li>
+                        <li>鯨魚資料庫整理</li>
+                    </ul>
+                </div>
+                <div class="summary-card">
+                    <h3>外部連結</h3>
+                    <div class="side-actions">
+                        <a class="side-action side-action-primary" href="https://yzu1122004.github.io/portfolio2/" target="_blank" rel="noopener noreferrer">前往網站</a>
+                    </div>
+                </div>
+                <a class="side-action side-action-return" href="../../index.html#sec-projects">← 返回作品</a>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../../JS/header.js"></script>
+    <script>
+        const fanShowcase = document.querySelector('[data-ui-showcase="fan"]');
+        const fanTrack = fanShowcase?.querySelector('[data-fan-track]');
+        const fanCards = Array.from(fanShowcase?.querySelectorAll('.fan-card') || []);
+        const fanPrev = fanShowcase?.querySelector('[data-fan-prev]');
+        const fanNext = fanShowcase?.querySelector('[data-fan-next]');
+        const fanProblemPanel = fanShowcase?.querySelector('[data-fan-panel="problem"]');
+        const fanGoalPanel = fanShowcase?.querySelector('[data-fan-panel="goal"]');
+        let fanIndex = 0;
+        let fanDragging = false;
+        let fanDidDrag = false;
+        let fanStartX = 0;
+        let fanStartY = 0;
+        let fanTurnTimer;
+
+        function setFanPanel(panel, label, title, copy) {
+            if (!panel) return;
+            panel.classList.remove('is-changing');
+            void panel.offsetWidth;
+            panel.querySelector('span').textContent = label;
+            panel.querySelector('strong').textContent = title || '';
+            panel.querySelector('p').textContent = copy || '';
+            panel.classList.add('is-changing');
+        }
+
+        function updateFanPanels() {
+            const activeCard = fanCards[fanIndex];
+            if (!activeCard) return;
+            setFanPanel(fanProblemPanel, 'Page', activeCard.dataset.problemTitle, activeCard.dataset.problemCopy);
+            setFanPanel(fanGoalPanel, 'Goal', activeCard.dataset.goalTitle, activeCard.dataset.goalCopy);
+        }
+
+        function renderFan() {
+            fanCards.forEach((card, index) => {
+                const offset = (index - fanIndex + fanCards.length) % fanCards.length;
+                card.dataset.fan = offset < 5 ? String(offset) : 'hidden';
+            });
+            updateFanPanels();
+        }
+
+        function moveFan(step) {
+            if (!fanCards.length) return;
+            window.clearTimeout(fanTurnTimer);
+            fanShowcase?.classList.add('is-fan-ready');
+            fanTrack?.classList.add('is-turning');
+            fanIndex = (fanIndex + step + fanCards.length) % fanCards.length;
+            renderFan();
+            fanTurnTimer = window.setTimeout(() => {
+                fanTrack?.classList.remove('is-turning');
+            }, 820);
+        }
+
+        fanPrev?.addEventListener('click', () => moveFan(-1));
+        fanNext?.addEventListener('click', () => moveFan(1));
+
+        fanTrack?.addEventListener('pointerdown', e => {
+            if (e.target.closest('button')) return;
+            fanDragging = true;
+            fanDidDrag = false;
+            fanStartX = e.clientX;
+            fanStartY = e.clientY;
+            fanTrack.classList.add('is-dragging');
+            fanTrack.setPointerCapture(e.pointerId);
+        });
+
+        fanTrack?.addEventListener('pointermove', e => {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            const dy = e.clientY - fanStartY;
+            if (Math.abs(dx) > 16 && Math.abs(dx) > Math.abs(dy)) fanDidDrag = true;
+        });
+
+        function endFanDrag(e) {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            fanDragging = false;
+            fanTrack.classList.remove('is-dragging');
+            if (fanDidDrag && Math.abs(dx) > 44) moveFan(dx > 0 ? -1 : 1);
+        }
+
+        fanTrack?.addEventListener('pointerup', endFanDrag);
+        fanTrack?.addEventListener('pointercancel', endFanDrag);
+
+        renderFan();
+        window.setTimeout(() => {
+            fanShowcase?.classList.add('is-fan-ready');
+        }, 980);
+
+        const revealTargets = [
+            ...document.querySelectorAll('.work-section'),
+            ...document.querySelectorAll('.side-panel .summary-card'),
+            document.querySelector('.side-panel .side-action-return')
+        ].filter(Boolean);
+
+        document.documentElement.classList.add('reveal-ready');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: '0px 0px -12% 0px'
+            });
+
+            revealTargets.forEach((target) => revealObserver.observe(target));
+        } else {
+            revealTargets.forEach((target) => target.classList.add('is-visible'));
+        }
+    </script>
+</body>
+
+</html>

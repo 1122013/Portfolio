@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY GO App 優化設計 | UI/UX</title>
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/ux-work.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar" type="button" data-href="../../index.html" data-page="首頁">首頁</button>
+            <button class="headerBar" type="button" data-href="../../index.html#sec-stack" data-page="關於">關於</button>
+            <button class="headerBar active" type="button" data-href="../../index.html#sec-projects"
+                data-page="作品">作品</button>
+            <button class="headerBar" type="button" data-href="../../index.html#contacts" data-page="聯絡">聯絡</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">作品</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem" type="button" data-href="../../index.html" data-page="首頁"><span>首頁</span><span
+                class="menuIcon">01</span></button>
+        <button class="menuItem" type="button" data-href="../about.html" data-page="關於"><span>關於</span><span
+                class="menuIcon">02</span></button>
+        <button class="menuItem active" type="button" data-href="../../index.html#sec-projects"
+            data-page="作品"><span>作品</span><span class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="../contact.html" data-page="聯絡"><span>聯絡</span><span
+                class="menuIcon">04</span></button>
+    </nav>
+
+    <main class="work-page">
+        <a class="back-link" href="../../index.html#sec-projects">← 返回作品</a>
+
+        <section class="ux-hero" aria-labelledby="work-title">
+            <div>
+                <p class="eyebrow">UI/UX Case Study</p>
+                <h1 id="work-title">HAPPY GO App 優化設計</h1>
+                <p class="hero-lead">
+                    本專案以「提升使用者消費體驗」為核心，透過系統化的介面重新排版，重點解決首頁資訊過載與功能路徑不明的問題，並藉由整合查詢按鈕、強化條碼放大與優化點數兌換流程，打造一個操作更為直覺、視覺美感與功能性兼具的點數管理工具。
+                </p>
+                <div class="project-meta" aria-label="專案資訊">
+                    <div class="meta-item">
+                        <span>Role</span>
+                        <strong>UI/UX Design</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Scope</span>
+                        <strong>App Redesign</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Focus</span>
+                        <strong>點數管理體驗</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-stage mockup-stage-fan" data-ui-showcase="fan" aria-label="HAPPY GO App 介面弧形展示">
+                <div class="fan-scene" data-fan-scene>
+                    <article class="fan-note fan-note-problem" data-fan-panel="problem">
+                        <span>Problem</span>
+                        <strong>查詢路徑分散</strong>
+                        <p>消費紀錄、點數與條碼分布在不同入口，使用者需要多次尋找。</p>
+                    </article>
+
+                    <div class="fan-track" data-fan-track>
+                         <figure class="fan-card"
+                            data-problem-title="功能不明"
+                            data-problem-copy="初次使用不知道在哪裡完成某些動作（例如如何查點數、兌換）"
+                            data-goal-title="首頁重新排版"
+                            data-goal-copy="減少廣告與非必要功能佔比。">
+                            <img src="../../IMGS/works_UI&UX/首頁.png" alt="HAPPY GO 查詢與點數紀錄介面">
+                        </figure>
+                        <figure class="fan-card"
+                            data-problem-title="查詢路徑分散"
+                            data-problem-copy="消費紀錄、點數與條碼分布在不同入口，使用者需要多次尋找。"
+                            data-goal-title="集中查詢入口"
+                            data-goal-copy="整合查詢按鈕與常用任務，降低來回切換頁面的操作成本。">
+                            <img src="../../IMGS/works_UI&UX/對點紀錄.png" alt="HAPPY GO 查詢與點數紀錄介面">
+                        </figure>
+                        <figure class="fan-card"
+                            data-problem-title="資訊過載"
+                            data-problem-copy="首頁促銷、點數與會員資訊同時出現，畫面層級不夠清楚。"
+                            data-goal-title="建立視覺層級"
+                            data-goal-copy="把任務入口、會員狀態與活動資訊分區，讓使用者先看到最重要的操作。">
+                            <img src="../../IMGS/works_UI&UX/我的票眷.png" alt="HAPPY GO 我的票券介面">
+                        </figure>
+                        <figure class="fan-card"
+                            data-problem-title="條碼入口不明顯"
+                            data-problem-copy="結帳時條碼入口不夠明顯，放大操作也缺少立即提示。"
+                            data-goal-title="強化快速入口"
+                            data-goal-copy="提升常用操作權重，讓掃碼、查詢與會員辨識流程更直接。">
+                            <img src="../../IMGS/works_UI&UX/我的帳號.png" alt="HAPPY GO 我的帳號介面">
+                        </figure>
+                        <figure class="fan-card"
+                            data-problem-title="兌換流程不明"
+                            data-problem-copy="優惠與點數兌換資訊缺少明確路徑，容易讓使用者停在列表中。"
+                            data-goal-title="縮短兌換流程"
+                            data-goal-copy="強化兌換入口與狀態提示，讓使用者能更直覺地完成點數使用。">
+                            <img src="../../IMGS/works_UI&UX/兌換點數.png" alt="HAPPY GO 點數兌換介面">
+                        </figure>
+                        <figure class="fan-card"
+                            data-problem-title="活動資訊分散"
+                            data-problem-copy="活動、優惠與合作通路分散在不同區塊，使用者難以快速比較。"
+                            data-goal-title="整理活動內容"
+                            data-goal-copy="用一致卡片與分類方式整理活動資訊，讓查找和比較更順。">
+                            <img src="../../IMGS/works_UI&UX/附近店家.png" alt="HAPPY GO 附近店家介面">
+                        </figure>
+                    </div>
+
+                    <article class="fan-note fan-note-goal" data-fan-panel="goal">
+                        <span>Goal</span>
+                        <strong>集中查詢入口</strong>
+                        <p>整合查詢按鈕與常用任務，降低來回切換頁面的操作成本。</p>
+                    </article>
+
+                    <div class="fan-controls" aria-label="切換展示介面">
+                        <button class="fan-nav" type="button" data-fan-prev aria-label="上一個介面">←</button>
+                        <button class="fan-nav" type="button" data-fan-next aria-label="下一個介面">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-stage mockup-stage-rebuilt" data-ui-showcase-old aria-label="HAPPY GO App 介面展示">
+                <div class="floating-panel one" data-panel="problem">
+                    <span>Problem</span>
+                    <strong>查詢路徑分散</strong>
+                    <p>消費紀錄、點數與條碼分布在不同入口，使用者需要多次尋找。</p>
+                </div>
+                <div class="phone-stack" data-phone-stack>
+                    <figure class="phone-mockup"
+                        data-problem-title="查詢路徑分散"
+                        data-problem-copy="消費紀錄、點數與條碼分布在不同入口，使用者需要多次尋找。"
+                        data-goal-title="集中查詢入口"
+                        data-goal-copy="整合查詢按鈕與常用任務，降低來回切換頁面的操作成本。">
+                        <img src="../../IMGS/indexIMGS/happyGo-mockup.png" alt="HAPPY GO App 首頁優化介面">
+                        <figcaption>首頁資訊重新整理</figcaption>
+                    </figure>
+                    <figure class="phone-mockup"
+                        data-problem-title="資訊過載"
+                        data-problem-copy="首頁促銷、點數與會員資訊同時出現，畫面層級不夠清楚。"
+                        data-goal-title="建立視覺層級"
+                        data-goal-copy="把任務入口、會員狀態與活動資訊分區，讓使用者先看到最重要的操作。">
+                        <img src="../../IMGS/indexIMGS/happyGo-mockup.png" alt="HAPPY GO App 資訊層級介面">
+                        <figcaption>資訊層級介面</figcaption>
+                    </figure>
+                    <figure class="phone-mockup"
+                        data-problem-title="條碼使用不直覺"
+                        data-problem-copy="結帳時條碼入口不夠明顯，放大操作也缺少立即提示。"
+                        data-goal-title="強化條碼放大"
+                        data-goal-copy="提升條碼入口權重，讓掃碼、放大與會員辨識流程更直接。">
+                        <img src="../../IMGS/indexIMGS/happyGo-mockup.png" alt="HAPPY GO App 條碼放大流程">
+                        <figcaption>條碼與會員辨識</figcaption>
+                    </figure>
+                    <figure class="phone-mockup"
+                        data-problem-title="兌換流程不明"
+                        data-problem-copy="優惠與點數兌換資訊缺少明確路徑，容易讓使用者停在列表中。"
+                        data-goal-title="縮短兌換流程"
+                        data-goal-copy="強化兌換入口與狀態提示，讓使用者能更直覺地完成點數使用。">
+                        <img src="../../IMGS/indexIMGS/happyGo-mockup.png" alt="HAPPY GO App 點數兌換流程">
+                        <figcaption>兌換流程入口</figcaption>
+                    </figure>
+                    <figure class="phone-mockup"
+                        data-problem-title="活動資訊分散"
+                        data-problem-copy="活動、優惠與合作通路分散在不同區塊，使用者難以快速比較。"
+                        data-goal-title="整理活動內容"
+                        data-goal-copy="用一致卡片與分類方式整理活動資訊，讓查找和比較更順。">
+                        <img src="../../IMGS/indexIMGS/happyGo-mockup.png" alt="HAPPY GO App 活動資訊介面">
+                        <figcaption>活動資訊整理</figcaption>
+                    </figure>
+                    <div class="phone-controls" aria-label="切換展示介面">
+                        <button class="phone-nav" type="button" data-phone-prev aria-label="上一個介面">←</button>
+                        <button class="phone-nav" type="button" data-phone-next aria-label="下一個介面">→</button>
+                    </div>
+                </div>
+                <div class="floating-panel two" data-panel="goal">
+                    <span>Goal</span>
+                    <strong>集中查詢入口</strong>
+                    <p>整合查詢按鈕與常用任務，降低來回切換頁面的操作成本。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <div>
+                <section class="work-section" aria-labelledby="intro-title">
+                    <div class="section-title">
+                        <p>Overview</p>
+                        <h2 id="intro-title">設計介紹</h2>
+                    </div>
+                    <p class="body-copy">
+                        HAPPY GO App
+                        乘載會員點數、消費查詢、條碼掃描、兌換活動與合作通路等多種任務，但原本介面容易讓使用者在首頁停留過久，難以快速判斷「現在能做什麼」。本設計模板可延伸放入研究資料、使用者旅程、改版前後比較與測試結果。
+                    </p>
+                    <ul class="feature-list">
+                        <li>服務頁面功能不明，替換成(點數兌換)改變流程。</li>
+                        <li>首頁重新排版，減少廣告與非必要功能佔比。</li>
+                        <li>附近店家頁面重新排版，集中功能減少頁面。</li>
+                        <li>查詢與分類整合成一按鈕。</li>
+                        <li>條碼頁面新增放大功能。</li>
+                        <li>帳號會員頁面將會員等級顯示前移改變流程。</li>
+                        <li>其餘頁面美術調整。</li>
+                    </ul>
+                </section>
+
+                <section class="work-section" aria-labelledby="figma-title">
+                    <div class="section-title">
+                        <p>Prototype</p>
+                        <h2 id="figma-title">Figma展示</h2>
+                    </div>
+                    <div class="embed-frame">
+                        <iframe title="使用者介面－HAPPY GO Figma Prototype" allowfullscreen
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMF6SAZBZvFJoL1DMyP4C7Z%2F%25E4%25BD%25BF%25E7%2594%25A8%25E8%2580%2585%25E4%25BB%258B%25E9%259D%25A2%25EF%25BC%258DHAPPY-GO%3Fnode-id%3D1-2%26t%3DzgxNiW6VmG4yUjSz-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D17%253A845">
+                        </iframe>
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="ia-title">
+                    <div class="section-title">
+                        <p>Information Architecture</p>
+                        <h2 id="ia-title">資訊架構圖</h2>
+                    </div>
+                    <div class="diagram-frame ia-map">
+                        <img src="../../IMGS/works_UI&UX/HAPPYGO架構圖.png" alt="">
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="blueprint-title">
+                    <div class="section-title">
+                        <p>Service Blueprint</p>
+                        <h2 id="blueprint-title">服務藍圖</h2>
+                    </div>
+                    <div class="blueprint">
+                        <img src="../../IMGS/works_UI&UX/ha服務藍圖.png" alt="">
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="system-title">
+                    <div class="section-title">
+                        <p>Design System</p>
+                        <h2 id="system-title">Design System</h2>
+                    </div>
+                    <div class="blueprint">
+                 <img src="../../IMGS/works_UI&UX/HAPPY GO DESIGN SYSTEM.png" alt="">
+                    </div>
+                </section>
+            </div>
+
+            <aside class="side-panel" aria-label="專案摘要">
+                <div class="summary-card">
+                    <h3>設計目標</h3>
+                    <p>我將針對APP五大功能頁面(會員身分識別條碼、 點數查詢與管理、點數兌換與折抵、店家查詢、會員帳戶與資料管理)做調整。</p>
+                </div>
+                <div class="summary-card">
+                    <h3>核心改善</h3>
+                    <ul>
+                        <li>首頁重新分層</li>
+                        <li>查詢入口整合</li>
+                        <li>條碼放大強化</li>
+                        <li>兌換流程優化</li>
+                    </ul>
+                </div>
+                <div class="summary-card">
+                    <h3>外部連結</h3>
+                    <div class="side-actions">
+                        <a class="side-action side-action-primary"
+                            href="https://www.figma.com/design/MF6SAZBZvFJoL1DMyP4C7Z/%E4%BD%BF%E7%94%A8%E8%80%85%E4%BB%8B%E9%9D%A2%EF%BC%8DHAPPY-GO?node-id=0-1&t=oOyXgAd6c6EZnooj-1"
+                            target="_blank" rel="noopener noreferrer">前往FIGMA檔案</a>
+                    </div>
+                </div>
+                <a class="side-action side-action-return" href="../../index.html#sec-projects">← 返回作品</a>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../../JS/header.js"></script>
+    <script>
+        const uiShowcase = document.querySelector('[data-ui-showcase]');
+        const phoneStack = uiShowcase?.querySelector('[data-phone-stack]');
+        const phoneCards = Array.from(uiShowcase?.querySelectorAll('.phone-mockup') || []);
+        const phonePrev = uiShowcase?.querySelector('[data-phone-prev]');
+        const phoneNext = uiShowcase?.querySelector('[data-phone-next]');
+        const problemPanel = uiShowcase?.querySelector('[data-panel="problem"]');
+        const goalPanel = uiShowcase?.querySelector('[data-panel="goal"]');
+        let phoneIndex = 0;
+        let phoneDragging = false;
+        let phoneDidDrag = false;
+        let phoneStartX = 0;
+        let phoneStartY = 0;
+
+        function renderPhoneStack() {
+            phoneCards.forEach((card, index) => {
+                const offset = (index - phoneIndex + phoneCards.length) % phoneCards.length;
+                card.dataset.phone = offset < 5 ? String(offset) : 'hidden';
+            });
+            updatePhonePanels();
+        }
+
+        function setPanel(panel, label, title, copy) {
+            if (!panel) return;
+            panel.classList.remove('is-changing');
+            void panel.offsetWidth;
+            panel.querySelector('span').textContent = label;
+            panel.querySelector('strong').textContent = title;
+            panel.querySelector('p').textContent = copy;
+            panel.classList.add('is-changing');
+        }
+
+        function updatePhonePanels() {
+            const activeCard = phoneCards[phoneIndex];
+            if (!activeCard) return;
+            setPanel(problemPanel, 'Problem', activeCard.dataset.problemTitle, activeCard.dataset.problemCopy);
+            setPanel(goalPanel, 'Goal', activeCard.dataset.goalTitle, activeCard.dataset.goalCopy);
+        }
+
+        function movePhoneStack(step) {
+            phoneIndex = (phoneIndex + step + phoneCards.length) % phoneCards.length;
+            renderPhoneStack();
+        }
+
+        phonePrev?.addEventListener('click', () => movePhoneStack(-1));
+        phoneNext?.addEventListener('click', () => movePhoneStack(1));
+
+        phoneStack?.addEventListener('pointerdown', e => {
+            if (e.target.closest('button')) return;
+            phoneDragging = true;
+            phoneDidDrag = false;
+            phoneStartX = e.clientX;
+            phoneStartY = e.clientY;
+            phoneStack.classList.add('is-dragging');
+            phoneStack.setPointerCapture(e.pointerId);
+        });
+
+        phoneStack?.addEventListener('pointermove', e => {
+            if (!phoneDragging) return;
+            const dx = e.clientX - phoneStartX;
+            const dy = e.clientY - phoneStartY;
+            if (Math.abs(dx) > 16 && Math.abs(dx) > Math.abs(dy)) phoneDidDrag = true;
+        });
+
+        function endPhoneDrag(e) {
+            if (!phoneDragging) return;
+            const dx = e.clientX - phoneStartX;
+            phoneDragging = false;
+            phoneStack.classList.remove('is-dragging');
+            if (phoneDidDrag && Math.abs(dx) > 44) movePhoneStack(dx > 0 ? -1 : 1);
+        }
+
+        phoneStack?.addEventListener('pointerup', endPhoneDrag);
+        phoneStack?.addEventListener('pointercancel', endPhoneDrag);
+
+        renderPhoneStack();
+
+        const fanShowcase = document.querySelector('[data-ui-showcase="fan"]');
+        const fanTrack = fanShowcase?.querySelector('[data-fan-track]');
+        const fanCards = Array.from(fanShowcase?.querySelectorAll('.fan-card') || []);
+        const fanPrev = fanShowcase?.querySelector('[data-fan-prev]');
+        const fanNext = fanShowcase?.querySelector('[data-fan-next]');
+        const fanProblemPanel = fanShowcase?.querySelector('[data-fan-panel="problem"]');
+        const fanGoalPanel = fanShowcase?.querySelector('[data-fan-panel="goal"]');
+        let fanIndex = 0;
+        let fanDragging = false;
+        let fanDidDrag = false;
+        let fanStartX = 0;
+        let fanStartY = 0;
+        let fanTurnTimer;
+
+        function setFanPanel(panel, label, title, copy) {
+            if (!panel) return;
+            panel.classList.remove('is-changing');
+            void panel.offsetWidth;
+            panel.querySelector('span').textContent = label;
+            panel.querySelector('strong').textContent = title || '';
+            panel.querySelector('p').textContent = copy || '';
+            panel.classList.add('is-changing');
+        }
+
+        function updateFanPanels() {
+            const activeCard = fanCards[fanIndex];
+            if (!activeCard) return;
+            setFanPanel(fanProblemPanel, 'Problem', activeCard.dataset.problemTitle, activeCard.dataset.problemCopy);
+            setFanPanel(fanGoalPanel, 'Goal', activeCard.dataset.goalTitle, activeCard.dataset.goalCopy);
+        }
+
+        function renderFan() {
+            fanCards.forEach((card, index) => {
+                const offset = (index - fanIndex + fanCards.length) % fanCards.length;
+                card.dataset.fan = offset < 5 ? String(offset) : 'hidden';
+            });
+            updateFanPanels();
+        }
+
+        function moveFan(step) {
+            if (!fanCards.length) return;
+            window.clearTimeout(fanTurnTimer);
+            fanShowcase?.classList.add('is-fan-ready');
+            fanTrack?.classList.add('is-turning');
+            fanIndex = (fanIndex + step + fanCards.length) % fanCards.length;
+            renderFan();
+            fanTurnTimer = window.setTimeout(() => {
+                fanTrack?.classList.remove('is-turning');
+            }, 820);
+        }
+
+        fanPrev?.addEventListener('click', () => moveFan(-1));
+        fanNext?.addEventListener('click', () => moveFan(1));
+
+        fanTrack?.addEventListener('pointerdown', e => {
+            if (e.target.closest('button')) return;
+            fanDragging = true;
+            fanDidDrag = false;
+            fanStartX = e.clientX;
+            fanStartY = e.clientY;
+            fanTrack.classList.add('is-dragging');
+            fanTrack.setPointerCapture(e.pointerId);
+        });
+
+        fanTrack?.addEventListener('pointermove', e => {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            const dy = e.clientY - fanStartY;
+            if (Math.abs(dx) > 16 && Math.abs(dx) > Math.abs(dy)) fanDidDrag = true;
+        });
+
+        function endFanDrag(e) {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            fanDragging = false;
+            fanTrack.classList.remove('is-dragging');
+            if (fanDidDrag && Math.abs(dx) > 44) moveFan(dx > 0 ? -1 : 1);
+        }
+
+        fanTrack?.addEventListener('pointerup', endFanDrag);
+        fanTrack?.addEventListener('pointercancel', endFanDrag);
+
+        renderFan();
+        window.setTimeout(() => {
+            fanShowcase?.classList.add('is-fan-ready');
+        }, 980);
+
+        const revealTargets = [
+            ...document.querySelectorAll('.work-section'),
+            ...document.querySelectorAll('.side-panel .summary-card'),
+            document.querySelector('.side-panel .side-action-return')
+        ].filter(Boolean);
+
+        document.documentElement.classList.add('reveal-ready');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: '0px 0px -12% 0px'
+            });
+
+            revealTargets.forEach((target) => revealObserver.observe(target));
+        } else {
+            revealTargets.forEach((target) => target.classList.add('is-visible'));
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷切模型作品 | Laser Cut</title>
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/laser-work.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar" type="button" data-href="../../index.html" data-page="首頁">首頁</button>
+            <button class="headerBar" type="button" data-href="../../index.html#sec-stack" data-page="關於">關於</button>
+            <button class="headerBar active" type="button" data-href="../../index.html#sec-projects"
+                data-page="作品">作品</button>
+            <button class="headerBar" type="button" data-href="../../index.html#contacts" data-page="聯絡">聯絡</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">作品</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem" type="button" data-href="../../index.html" data-page="首頁"><span>首頁</span><span
+                class="menuIcon">01</span></button>
+        <button class="menuItem" type="button" data-href="../about.html" data-page="關於"><span>關於</span><span
+                class="menuIcon">02</span></button>
+        <button class="menuItem active" type="button" data-href="../../index.html#sec-projects"
+            data-page="作品"><span>作品</span><span class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="../contact.html" data-page="聯絡"><span>聯絡</span><span
+                class="menuIcon">04</span></button>
+    </nav>
+
+    <main class="laser-page">
+        <a class="back-link" href="../../index.html#sec-projects">← 返回作品</a>
+
+        <section class="laser-hero" aria-labelledby="work-title">
+            <div class="laser-copy">
+                <p class="eyebrow">Laser Cut Model</p>
+                <h1 class="laser-title" id="work-title">鋼琴收納盒</h1>
+                <p class="laser-lead">
+                 本系列透過 SketchUp 進行空間建模，藉由 3D 模擬精確計算結構支撐並預判物理誤差。實作階段將模型轉化為 2D 向量格式，並運用 RDWorks V8 針對椴木合板特性優化雷射參數。透過對切割速度與功率的動態調整，確保零件卡榫的精密吻合，並保留工藝特有的焦邊質感。
+                </p>
+                <div class="laser-meta" aria-label="專案資訊">
+                    <div class="laser-meta-item">
+                        <span>Medium</span>
+                        <strong>雷射切割</strong>
+                    </div>
+                    <div class="laser-meta-item">
+                        <span>Software</span>
+                        <strong>SketchUp</strong>
+                    </div>
+                    <div class="laser-meta-item">
+                        <span>Focus</span>
+                        <strong>模型結構</strong>
+                    </div>
+                </div>
+            </div>
+
+            <section class="photo-stack-section" aria-labelledby="gallery-title">
+                <div class="stack-heading">
+                    <div>
+                        <p class="eyebrow">Gallery</p>
+                        <h2 id="gallery-title">成品與設計</h2>
+                    </div>
+                    <div class="stack-controls" aria-label="切換相片">
+                        <button class="stack-btn" type="button" data-stack-prev aria-label="上一張">←</button>
+                        <button class="stack-btn" type="button" data-stack-next aria-label="下一張">→</button>
+                    </div>
+                </div>
+
+                <div class="photo-stack" data-photo-stack>
+                    <figure class="stack-card">
+                        <img src="../../IMGS/works_laserCut/paino.jpg" alt="海克斯堡箱雷切模型">
+                        <figcaption>鋼琴收納盒完整圖</figcaption>
+                    </figure>
+                    <figure class="stack-card">
+                        <img src="../../IMGS/indexIMGS/paina_LC.jpg" alt="熱氣球雷切模型">
+                        <figcaption>開啟圖</figcaption>
+                    </figure>
+               
+                     <figure class="stack-card">
+                        <img src="../../IMGS/works_laserCut/paino2.jpg" alt="熱氣球雷切模型">
+                        <figcaption>2D零件圖</figcaption>
+                    </figure>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="model-section" aria-labelledby="model-title">
+            <div class="section-title">
+                <p>3D Model</p>
+                <h2 id="model-title">3D建模預覽</h2>
+            </div>
+            <div class="model-frame">
+                <iframe class="warehouse-frame" title="SketchUp 3D Warehouse 模型"
+                    src="https://3dwarehouse.sketchup.com/embed/8d3afd4a-2f36-484b-81cd-dac08c7fea27?token=A0kaITRQuT8=&binaryName=s21"
+                    loading="eager" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../JS/header.js"></script>
+    <script>
+        const stack = document.querySelector('[data-photo-stack]');
+        const cards = Array.from(document.querySelectorAll('.stack-card'));
+        const prevButton = document.querySelector('[data-stack-prev]');
+        const nextButton = document.querySelector('[data-stack-next]');
+        let activeIndex = 0;
+        let dragging = false;
+        let didDrag = false;
+        let startX = 0;
+        let startY = 0;
+
+        function renderStack() {
+            const total = cards.length;
+            cards.forEach((card, index) => {
+                const offset = (index - activeIndex + total) % total;
+                card.dataset.stack = offset < 4 ? String(offset) : 'hidden';
+            });
+        }
+
+        function moveStack(direction) {
+            activeIndex = (activeIndex + direction + cards.length) % cards.length;
+            renderStack();
+        }
+
+        prevButton.addEventListener('click', () => moveStack(-1));
+        nextButton.addEventListener('click', () => moveStack(1));
+        stack.addEventListener('pointerdown', e => {
+            dragging = true;
+            didDrag = false;
+            startX = e.clientX;
+            startY = e.clientY;
+            stack.classList.add('is-dragging');
+            stack.setPointerCapture(e.pointerId);
+        });
+
+        stack.addEventListener('pointermove', e => {
+            if (!dragging) return;
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+            if (Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) {
+                didDrag = true;
+                e.preventDefault();
+            }
+        });
+
+        function endStackDrag(e) {
+            if (!dragging) return;
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+            dragging = false;
+            stack.classList.remove('is-dragging');
+            if (Math.abs(dx) > 54 && Math.abs(dx) > Math.abs(dy)) {
+                moveStack(dx < 0 ? 1 : -1);
+            }
+            setTimeout(() => { didDrag = false; }, 80);
+        }
+
+        stack.addEventListener('pointerup', endStackDrag);
+        stack.addEventListener('pointercancel', endStackDrag);
+
+        cards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                if (didDrag) return;
+                activeIndex = index;
+                renderStack();
+            });
+        });
+        renderStack();
+    </script>
+</body>
+
+</html>

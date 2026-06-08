@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400&family=Raleway:wght@200;300;400&family=Inter:wght@300;400&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+:root {
+    --accent: #7c6ff7;
+    --accent-bright: #a89bf9;
+    /* --accent-dim: rgba(124, 111, 247, 0.15); */
+    --accent-glow: rgba(124, 111, 247, 0.3);
+    --dark-bg: #0b0e1a; 
+    --dark-mid: #111527;
+    --dark-surface: #161b2e;
+    --header-bg: rgba(11, 14, 26, 0.94);
+    --text-primary: #dde2f0;
+    --text-muted: #69728c;
+    --border: rgba(124, 111, 247, 0.2);
+    --header-h: 76px;
+}
+
+body {
+    padding-top: var(--header-h);
+    background: var(--dark-bg);
+}
+
+button {
+    font: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: var(--header-h);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 56px;
+    border-bottom: 1px solid rgba(124, 111, 247, 0.22);
+    background: var(--header-bg);
+    backdrop-filter: blur(18px) saturate(150%);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+header.scrolled {
+    background: rgba(9, 11, 22, 0.96);
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(124, 111, 247, 0.25);
+}
+
+header::before {
+    display: none;
+}
+
+.headerBox:first-child {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.headerAvatar {
+    position: relative;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    background:
+        linear-gradient(135deg, rgba(124, 92, 255, 0.16), rgba(51, 133, 255, 0.08)),
+        url('../IMGS/indexIMGS/頭像.png') center / cover no-repeat,
+        var(--dark-mid);
+    box-shadow: 0 0 0 2px var(--accent), 0 0 14px var(--accent-glow);
+}
+
+.headerAvatar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(124, 92, 255, 0.14) 0%, transparent 58%, rgba(168, 155, 249, 0.12) 100%);
+    pointer-events: none;
+}
+
+.headerNames {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.headerNameCN {
+    color: var(--text-primary);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+}
+
+.headerNameEN {
+    color: var(--accent-bright);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 300;
+    letter-spacing: 0.32em;
+    line-height: 1.2;
+    opacity: 0.85;
+}
+
+.headerBars {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    height: 100%;
+}
+
+.headerBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 104px;
+    height: 100%;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: rgba(221, 226, 240, 0.74);
+    cursor: pointer;
+    font-family: 'Inter', 'Noto Serif TC', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    white-space: nowrap;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+.headerBar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #2f7cff;
+    opacity: 0;
+    transform: scaleX(0.32);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.headerBar:hover,
+.headerBar:focus-visible {
+    background: rgba(25, 32, 62, 0.45);
+    color: rgba(238, 242, 255, 0.94);
+}
+
+.headerBar.active {
+    background: rgba(25, 32, 62, 0.78);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.headerBar.active::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.headerBars .headerBar:first-child {
+    flex: 0 0 72px;
+    min-width: 72px;
+    width: 72px;
+    padding: 0;
+    font-size: 0;
+}
+
+.headerBars .headerBar:first-child::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: currentColor;
+    transform: translate(-50%, -50%);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 11 9-8 9 8'/%3E%3Cpath d='M5 10v10h14V10'/%3E%3Cpath d='M9 20v-6h6v6'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 11 9-8 9 8'/%3E%3Cpath d='M5 10v10h14V10'/%3E%3Cpath d='M9 20v-6h6v6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.headerBars .headerBar:first-child.active {
+    color: #2f7cff;
+}
+
+.bottomBar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    gap: 4px;
+    height: 52px;
+    padding: 0 6px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--dark-surface);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(124, 111, 247, 0.1);
+    transform: translateX(-50%);
+}
+
+.bottomBar-active,
+.bottomBar-menu {
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: 'Inter', 'Noto Serif TC', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+}
+
+.bottomBar-active {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px 8px 12px;
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 18px var(--accent-glow);
+}
+
+.bottomBar-active::before {
+    content: '';
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.bottomBar-menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.bottomBar-menu::after {
+    content: '\2303';
+    font-size: 0.75rem;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.bottomBar-menu.open::after {
+    transform: rotate(180deg);
+}
+
+.mobileMenu {
+    position: fixed;
+    right: 12px;
+    bottom: 82px;
+    left: 12px;
+    z-index: 1099;
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--dark-surface);
+    box-shadow: 0 -8px 48px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(16px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobileMenu.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-family: 'Inter', 'Noto Serif TC', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    transition: background 0.2s ease;
+}
+
+.menuItem:hover,
+.menuItem:focus-visible {
+    background: var(--accent-dim);
+}
+
+.menuItem.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 18px var(--accent-glow);
+}
+
+.menuIcon {
+    font-size: 0.72rem;
+    opacity: 0.65;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 32px;
+    }
+
+    .headerBar {
+        min-width: 86px;
+        height: 100%;
+        padding: 0 12px;
+        font-size: 0.86rem;
+    }
+
+    .headerBars .headerBar:first-child {
+        flex-basis: 62px;
+        min-width: 62px;
+        width: 62px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        display: none;
+    }
+
+    body {
+        padding-top: 0;
+        padding-bottom: 88px;
+    }
+
+    .bottomBar,
+    .mobileMenu {
+        display: flex;
+    }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>女巫の藥水 | Web Game</title>
+    <link rel="stylesheet" href="../../CSS/header.css">
+    <link rel="stylesheet" href="../../CSS/ux-work.css">
+</head>
+
+<body data-work-type="web-design">
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar" type="button" data-href="../../index.html" data-page="首頁">首頁</button>
+            <button class="headerBar" type="button" data-href="../../index.html#sec-stack" data-page="關於">關於</button>
+            <button class="headerBar active" type="button" data-href="../../index.html#sec-projects"
+                data-page="作品">作品</button>
+            <button class="headerBar" type="button" data-href="../../index.html#contacts" data-page="聯絡">聯絡</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">作品</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem" type="button" data-href="../../index.html" data-page="首頁"><span>首頁</span><span
+                class="menuIcon">01</span></button>
+        <button class="menuItem" type="button" data-href="../../index.html#sec-stack" data-page="關於"><span>關於</span><span
+                class="menuIcon">02</span></button>
+        <button class="menuItem active" type="button" data-href="../../index.html#sec-projects"
+            data-page="作品"><span>作品</span><span class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="../../index.html#contacts" data-page="聯絡"><span>聯絡</span><span
+                class="menuIcon">04</span></button>
+    </nav>
+
+    <main class="work-page">
+        <a class="back-link" href="../../index.html#sec-projects">← 返回作品</a>
+
+        <section class="ux-hero" aria-labelledby="work-title">
+            <div>
+                <p class="eyebrow">Web Game Development</p>
+                <h1 id="work-title">女巫の藥水</h1>
+                <p class="hero-lead">
+                    以東方 Project 彈幕玩法為靈感的縱向捲軸射擊網頁遊戲。玩家操控小女巫在密集彈幕中移動、射擊、使用 Bomb 清除危機，並透過三選一強化逐步挑戰食人花、幽靈與紅女巫 Boss。
+                </p>
+                <div class="project-meta" aria-label="專案資訊">
+                    <div class="meta-item">
+                        <span>Role</span>
+                        <strong>Boss Logic / Integration</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Scope</span>
+                        <strong>Bullet Hell Web Game</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Focus</span>
+                        <strong>Boss 彈幕與關卡節奏</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-stage mockup-stage-fan mockup-stage-web" data-ui-showcase="fan"
+                aria-label="女巫の藥水遊戲畫面展示">
+                <div class="fan-scene" data-fan-scene>
+                    <article class="fan-note fan-note-problem" data-fan-panel="problem">
+                        <span>Scene</span>
+                        <strong>遊戲入口</strong>
+                        <p>主選單以像素風場景建立女巫、藥水與冒險氛圍。</p>
+                    </article>
+
+                    <div class="fan-track" data-fan-track>
+                        <figure class="fan-card" data-problem-title="遊戲入口"
+                            data-problem-copy="進入主頁面後預載遊戲資源與音樂，提供開始遊戲、遊戲說明與音樂設定。"
+                            data-goal-title="建立開場節奏" data-goal-copy="用清楚的開始按鈕與主場景，讓玩家快速理解這是一款彈幕冒險遊戲。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水_首頁.png" alt="女巫の藥水首頁畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="玩家彈幕"
+                            data-problem-copy="玩家需要在上下左右移動的同時持續射擊，並閃避敵人密集彈幕。"
+                            data-goal-title="操作與回饋清楚" data-goal-copy="整合角色控制、普通射擊、生命值、Bomb 與分數顯示，讓戰鬥資訊維持可讀。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水__玩家彈幕.png" alt="女巫の藥水玩家彈幕畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="強化選擇"
+                            data-problem-copy="遊戲開始與打倒 Boss 後會進入三選一強化介面，決定下一段戰鬥風格。"
+                            data-goal-title="讓玩法有變化" data-goal-copy="提供擴散型、集中型與連射型強化，讓玩家能依戰況調整子彈配置。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水_選擇強化.png" alt="女巫の藥水強化選擇畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="第一關小怪"
+                            data-problem-copy="每關 Boss 前會出現 5 波小怪，玩家需清除敵人並收集 P 點、補血與 Bomb 道具。"
+                            data-goal-title="鋪陳 Boss 前節奏" data-goal-copy="透過小怪彈幕與掉落物，讓玩家先累積資源再進入高壓 Boss 戰。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水_小怪1.png" alt="女巫の藥水小怪戰鬥畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="BOSS 1：食人花"
+                            data-problem-copy="食人花共有 3 階段，會發射 24 顆子彈圈，並切換成邊界聚合與扇形瞄準彈幕。"
+                            data-goal-title="建立第一段壓力" data-goal-copy="以規律圓形彈幕到隨機聚合彈幕，讓玩家逐步適應 Boss 戰節奏。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水_BOSS1_彈幕1.png" alt="女巫の藥水 BOSS1 彈幕畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="BOSS 2：幽靈"
+                            data-problem-copy="幽靈會在多點之間移動，搭配上方掉落、邊界瞄準與反彈衝刺彈幕。"
+                            data-goal-title="提高移動壓迫" data-goal-copy="用不固定位置與反彈路徑迫使玩家判斷空間，而不是只停留在原地輸出。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水__BOSS2_彈幕2.png" alt="女巫の藥水 BOSS2 彈幕畫面">
+                        </figure>
+                        <figure class="fan-card" data-problem-title="BOSS 3：紅女巫"
+                            data-problem-copy="最終 Boss 會使用 markbullet、衝刺殘留彈、chainbullet 與分身旋轉彈幕。"
+                            data-goal-title="完成最終挑戰" data-goal-copy="把瞄準、反彈、延遲爆發與旋轉彈幕組合成最終關卡高潮。">
+                            <img src="../../IMGS/works_webDesign/女巫藥水__BOSS3_彈幕4.png" alt="女巫の藥水 BOSS3 彈幕畫面">
+                        </figure>
+                    </div>
+
+                    <article class="fan-note fan-note-goal" data-fan-panel="goal">
+                        <span>Goal</span>
+                        <strong>建立開場節奏</strong>
+                        <p>用清楚的開始按鈕與主場景，讓玩家快速理解彈幕冒險玩法。</p>
+                    </article>
+
+                    <div class="fan-controls" aria-label="切換展示圖片">
+                        <button class="fan-nav" type="button" data-fan-prev aria-label="上一張">←</button>
+                        <button class="fan-nav" type="button" data-fan-next aria-label="下一張">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <div>
+                <section class="work-section" aria-labelledby="intro-title">
+                    <div class="section-title">
+                        <p>Overview</p>
+                        <h2 id="intro-title">遊戲介紹</h2>
+                    </div>
+                    <p class="body-copy">
+                        小女巫為了奪得藥水大賽第一名，踏上收集神秘材料的冒險。她會在田地中對抗食人花、在陰森墓地面對幽靈守衛，最後於花園深處閃避紅女巫追擊。作品目標是把東方風格的彈幕密度、網頁互動與清楚的關卡節奏整合成可操作的遊戲體驗。
+                    </p>
+                    <ul class="feature-list">
+                        <li>玩家使用 WASD 或方向鍵移動，長按空白鍵射擊，並用 X 鍵施放 Bomb 清除彈幕。</li>
+                        <li>起始血量為 5 顆心，受傷後有短暫無敵；Bomb、補血與 P 點會在 Boss 戰後固定掉落。</li>
+                        <li>三選一強化分為擴散型、集中型與連射型，影響玩家下一段戰鬥策略。</li>
+                        <li>共 3 大關、3 隻 Boss，每隻 Boss 會依血量切換 3 到 4 種彈幕型態。</li>
+                    </ul>
+                </section>
+
+                <section class="work-section" aria-labelledby="site-title">
+                    <div class="section-title">
+                        <p>Website Link</p>
+                        <h2 id="site-title">網址放置處</h2>
+                    </div>
+                    <div class="link-card">
+                        <p>這裡可放遊戲網站、GitHub Pages 或作品展示連結。</p>
+                        <a href="https://yzu1122004.github.io/portfolio1/" target="_blank" rel="noopener noreferrer">前往遊戲</a>
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="flow-title">
+                    <div class="section-title">
+                        <p>Game Flow</p>
+                        <h2 id="flow-title">遊戲流程設計</h2>
+                    </div>
+                    <div class="blueprint">
+                        <img src="../../IMGS/works_webDesign/女巫流程.PNG" alt="女巫の藥水遊戲流程圖">
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="boss-title">
+                    <div class="section-title">
+                        <p>Boss Pattern</p>
+                        <h2 id="boss-title">Boss 彈幕展示</h2>
+                    </div>
+                    <div class="image-pair">
+                        <div class="blueprint">
+                            <img src="../../IMGS/works_webDesign/女巫藥水__BOSS1_彈幕2.png" alt="女巫の藥水 BOSS1 彈幕展示">
+                        </div>
+                        <div class="blueprint">
+                            <img src="../../IMGS/works_webDesign/女巫藥水__BOSS3_彈幕3.png" alt="女巫の藥水 BOSS3 彈幕展示">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="work-section" aria-labelledby="art-title">
+                    <div class="section-title">
+                        <p>Art Direction</p>
+                        <h2 id="art-title">遊戲美術與場景</h2>
+                    </div>
+                    <div class="image-pair">
+                        <div class="blueprint">
+                            <img src="../../IMGS/works_webDesign/女巫美術1.PNG" alt="女巫の藥水美術設計一">
+                        </div>
+                        <div class="blueprint">
+                            <img src="../../IMGS/works_webDesign/女巫美術2.PNG" alt="女巫の藥水美術設計二">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="side-panel" aria-label="專案重點">
+                <div class="summary-card">
+                    <h3>設計目標</h3>
+                    <p>做出一款融合東方 Project 彈幕精神與網頁技術的射擊遊戲，讓玩家在高密度彈幕、強化選擇與 Boss 階段切換中感受挑戰。</p>
+                </div>
+                <div class="summary-card">
+                    <h3>核心機制</h3>
+                    <ul>
+                        <li>縱向捲軸 STG 操作</li>
+                        <li>P 點、補血與 Bomb 掉落</li>
+                        <li>三選一子彈強化</li>
+                        <li>三關 Boss 階段彈幕</li>
+                    </ul>
+                </div>
+                <div class="summary-card">
+                    <h3>負責內容</h3>
+                    <p>我負責所有 Boss 邏輯、Boss 彈幕與整合。</p>
+                </div>
+                <div class="summary-card">
+                    <h3>外部連結</h3>
+                    <div class="side-actions">
+                        <a class="side-action side-action-primary" href="https://yzu1122004.github.io/portfolio1/" target="_blank" rel="noopener noreferrer">前往遊戲</a>
+                    </div>
+                </div>
+                <a class="side-action side-action-return" href="../../index.html#sec-projects">← 返回作品</a>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../../JS/header.js"></script>
+    <script>
+        const fanShowcase = document.querySelector('[data-ui-showcase="fan"]');
+        const fanTrack = fanShowcase?.querySelector('[data-fan-track]');
+        const fanCards = Array.from(fanShowcase?.querySelectorAll('.fan-card') || []);
+        const fanPrev = fanShowcase?.querySelector('[data-fan-prev]');
+        const fanNext = fanShowcase?.querySelector('[data-fan-next]');
+        const fanProblemPanel = fanShowcase?.querySelector('[data-fan-panel="problem"]');
+        const fanGoalPanel = fanShowcase?.querySelector('[data-fan-panel="goal"]');
+        let fanIndex = 0;
+        let fanDragging = false;
+        let fanDidDrag = false;
+        let fanStartX = 0;
+        let fanStartY = 0;
+        let fanTurnTimer;
+
+        function setFanPanel(panel, label, title, copy) {
+            if (!panel) return;
+            panel.classList.remove('is-changing');
+            void panel.offsetWidth;
+            panel.querySelector('span').textContent = label;
+            panel.querySelector('strong').textContent = title || '';
+            panel.querySelector('p').textContent = copy || '';
+            panel.classList.add('is-changing');
+        }
+
+        function updateFanPanels() {
+            const activeCard = fanCards[fanIndex];
+            if (!activeCard) return;
+            setFanPanel(fanProblemPanel, 'Scene', activeCard.dataset.problemTitle, activeCard.dataset.problemCopy);
+            setFanPanel(fanGoalPanel, 'Goal', activeCard.dataset.goalTitle, activeCard.dataset.goalCopy);
+        }
+
+        function renderFan() {
+            fanCards.forEach((card, index) => {
+                const offset = (index - fanIndex + fanCards.length) % fanCards.length;
+                card.dataset.fan = offset < 5 ? String(offset) : 'hidden';
+            });
+            updateFanPanels();
+        }
+
+        function moveFan(step) {
+            if (!fanCards.length) return;
+            window.clearTimeout(fanTurnTimer);
+            fanShowcase?.classList.add('is-fan-ready');
+            fanTrack?.classList.add('is-turning');
+            fanIndex = (fanIndex + step + fanCards.length) % fanCards.length;
+            renderFan();
+            fanTurnTimer = window.setTimeout(() => {
+                fanTrack?.classList.remove('is-turning');
+            }, 820);
+        }
+
+        fanPrev?.addEventListener('click', () => moveFan(-1));
+        fanNext?.addEventListener('click', () => moveFan(1));
+
+        fanTrack?.addEventListener('pointerdown', e => {
+            if (e.target.closest('button')) return;
+            fanDragging = true;
+            fanDidDrag = false;
+            fanStartX = e.clientX;
+            fanStartY = e.clientY;
+            fanTrack.classList.add('is-dragging');
+            fanTrack.setPointerCapture(e.pointerId);
+        });
+
+        fanTrack?.addEventListener('pointermove', e => {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            const dy = e.clientY - fanStartY;
+            if (Math.abs(dx) > 16 && Math.abs(dx) > Math.abs(dy)) fanDidDrag = true;
+        });
+
+        function endFanDrag(e) {
+            if (!fanDragging) return;
+            const dx = e.clientX - fanStartX;
+            fanDragging = false;
+            fanTrack.classList.remove('is-dragging');
+            if (fanDidDrag && Math.abs(dx) > 44) moveFan(dx > 0 ? -1 : 1);
+        }
+
+        fanTrack?.addEventListener('pointerup', endFanDrag);
+        fanTrack?.addEventListener('pointercancel', endFanDrag);
+
+        renderFan();
+        window.setTimeout(() => {
+            fanShowcase?.classList.add('is-fan-ready');
+        }, 980);
+
+        const revealTargets = [
+            ...document.querySelectorAll('.work-section'),
+            ...document.querySelectorAll('.side-panel .summary-card'),
+            document.querySelector('.side-panel .side-action-return')
+        ].filter(Boolean);
+
+        document.documentElement.classList.add('reveal-ready');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: '0px 0px -12% 0px'
+            });
+
+            revealTargets.forEach((target) => revealObserver.observe(target));
+        } else {
+            revealTargets.forEach((target) => target.classList.add('is-visible'));
+        }
+    </script>
+</body>
+
+</html>

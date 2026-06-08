@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏梓倫 | 作品集</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./IMGS/indexIMGS/spinHouse_LC.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar active" type="button" data-href="./index.html" data-page="首頁">首頁</button>
+            <button class="headerBar" type="button" data-href="./index.html#sec-stack" data-page="關於">關於</button>
+            <button class="headerBar" type="button" data-href="./index.html#sec-projects" data-page="作品">作品</button>
+            <button class="headerBar" type="button" data-href="./index.html#contacts" data-page="聯絡">聯絡</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">首頁</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem active" type="button" data-href="./index.html" data-page="首頁"><span>首頁</span><span
+                class="menuIcon">01</span></button>
+        <button class="menuItem" type="button" data-href="./index.html#sec-stack" data-page="關於"><span>關於</span><span
+                class="menuIcon">02</span></button>
+        <button class="menuItem" type="button" data-href="./index.html#sec-projects" data-page="作品"><span>作品</span><span
+                class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="./index.html#contacts" data-page="聯絡"><span>聯絡</span><span
+                class="menuIcon">04</span></button>
+    </nav>
+
+    <div id="projectBoard" aria-hidden="true"></div>
+
+    <main>
+        <section class="sec-hero page-section" id="sec-hero">
+            <div class="heroAvatar"></div>
+            <div class="section-copy"  id="contacts">
+                <h1>魏梓倫</h1>
+                <p>專長於 Web 全端開發與系統建構。擅長處理複雜的「語境轉譯」，能有效將機械原理或設計語彙轉化為技術文件與程式邏輯。在 AI 協作趨勢下，我能運用紮實的開發基礎與英文邏輯，輔助生成式 AI
+                    模型之語境研究。我享受沉浸式投入專案的成就感，期望能將穩健的技術實力投入跨領域平台之研發與優化。</p>
+            </div>
+            <div class="social-container">
+                <a href="#" class="social-btn github">
+                    <i class="fab fa-github"></i>
+                    <span class="text">GitHub</span>
+                </a>
+                <a href="#" class="social-btn x">
+                    <i class="fab fa-x-twitter"></i>
+                    <span class="text">X / Twitter</span>
+                </a>
+                <a href="#" class="social-btn threads">
+                    <i class="fa-solid fa-at"></i>
+                    <span class="text">Threads</span>
+                </a>
+                <a href="#" class="social-btn linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="text">LinkedIn</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="sec-stack page-section" id="sec-stack">
+            <div class="stack-copy">
+                <p class="kicker">Stack & Tools</p>
+                <h2>技術與使用軟體</h2>
+                <p>
+                  我習慣將設計、開發與模型製作統合於單一流程中思考，從介面規劃、視覺呈現至前端實作，並輔以 AI 協作與 3D/遊戲開發工具。在技術堆疊上，我擁有多元的跨領域整合能力：前端與開發實作上精通並具備後端開發能力，也能運用 C++  處理複雜邏輯；在視覺與原型設計上熟練操作 Figma, Illustrator 與 Photoshop，專注於高效的 UI/UX 設計與品牌視覺產出；此外具備 SketchUp 建模能力，並能結合 Unity 引擎與 AI 輔助開發流程。
+                </p>
+                <div class="stack-tags" aria-label="技術分類">
+                    <span>HTML、CSS、JavaScript</span>
+                    <span>PHP、SQL</span>
+                    <span>C++</span>
+                    <span>python</span>
+                </div>
+                <!-- <a class="stack-cv-link" href="./HTMLS/about.html">查看完整履歷 →</a> -->
+            </div>
+
+            <div class="tool-panel">
+                <div class="tool-grid" aria-label="使用軟體與工具">
+                    <article class="tool-card">
+                        <img src="./IMGS/indexIMGS/LOG_AIIMG.png" alt="Adobe Illustrator">
+                        <span>Illustrator</span>
+                    </article>
+                    <article class="tool-card">
+                        <img src="./IMGS/indexIMGS/LOG_PSIMG.png" alt="Adobe Photoshop">
+                        <span>Photoshop</span>
+                    </article>
+                    <article class="tool-card">
+                        <img src="./IMGS/indexIMGS/LOG_figmaIMG.png" alt="Figma">
+                        <span>Figma</span>
+                    </article>
+                    <article class="tool-card">
+                        <img src="./IMGS/indexIMGS/LOG_claudeIMG.png" alt="Claude">
+                        <span>Claude</span>
+                    </article>
+                    <article class="tool-card">
+                        <img src="./IMGS/indexIMGS/LOG_sketchUpIMG.png" alt="SketchUp">
+                        <span>SketchUp</span>
+                    </article>
+                    <article class="tool-card">
+                        <img src="./IMGS/indexIMGS/LOG_unityIMG.png" alt="Unity">
+                        <span>Unity</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-about page-section" id="sec-about">
+            <div class="section-timeLine">
+                <div class="about-section-heading">
+                    <p class="kicker">Timeline</p>
+                    <h2>成長時間線</h2>
+                </div>
+                <div class="timeline-list">
+                    <article class="timeline-item is-current">
+                        <span class="timeline-year">2026 - Now</span>
+                        <h3>元智大學學士</h3>
+                        <p>整理前端互動、視覺設計與跨領域專案，建立可持續更新的個人作品集。</p>
+                    </article>
+                      <article class="timeline-item">
+                        <span class="timeline-year">2026</span>
+                        <h3>教育部虛擬實境VR教具開發計畫</h3>
+                        <p>負責3D建模與AI語音連接</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-year">2023</span>
+                        <h3>基隆市市立安樂高級中學</h3>
+                        <p>將設計語彙轉換為可操作的網頁互動，累積 UI、前端與系統整合經驗。</p>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-year">2022</span>
+                        <h3>基隆市建德國民中學</h3>
+                        <p>透過雷切、模型、網頁與資料整理，發展跨媒材的問題解決能力。</p>
+                    </article>
+                
+                </div>
+            </div>
+
+            <div class="section-Competition">
+                <div class="about-section-heading">
+                    <p class="kicker">Awards</p>
+                    <h2>比賽與獎狀</h2>
+                </div>
+                <div class="competition-list">
+                    <article class="competition-card">
+                        <span class="award-date">2025</span>
+                        <h3>育秀盃工業設計類</h3>
+                        <p>進入初選。負責架構設計與互動製作。</p>
+                        <div class="award-tags">
+                            <span>UI/UX</span>
+                            <span>Team</span>
+                            <span>competition</span>
+                        </div>
+                    </article>
+                    <article class="competition-card">
+                        <span class="award-date">2025</span>
+                        <h3>書卷獎</h3>
+                        <p>資訊傳播系大2平均第1名</p>
+                        <div class="award-tags">
+                            <span>Award Certificate</span>
+                        </div>
+                    </article>
+                    <article class="competition-card">
+                        <span class="award-date">2024</span>
+                        <h3>書卷獎</h3>
+                        <p>資訊傳播系大1平均第1名</p>
+                        <div class="award-tags">
+                            <span>Award Certificate</span>
+                        </div>
+                    </article>
+                      <article class="competition-card">
+                        <span class="award-date">2020</span>
+                        <h3>自造之星GoSTEAM（季軍）</h3>
+                        <p>職責：設計組長｜技術：3D 建模、雷切</p>
+                        <div class="award-tags">
+                            <span>competition</span>
+                        </div>
+                    </article>
+                    <article class="competition-card">
+                        <span class="award-date">2020</span>
+                        <h3>小論文數學類(嘉獎)</h3>
+                        <p>作品:骰子遊戲</p>
+                        <div class="award-tags">
+                            <span>competition</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-projects page-section" id="sec-projects">
+            <div class="sec-projects-inner">
+                <p class="sec-projects-label">Works</p>
+                <h2 class="sec-projects-title">作品</h2>
+                <p class="sec-projects-sub">搜尋作品，或用分類快速篩選。</p>
+                <div class="project-search">
+                    <input id="projectSearch" type="search" placeholder="搜尋 title / tag / desc" autocomplete="off">
+                </div>
+                <div class="project-filters" aria-label="作品分類">
+                    <button class="filter-btn active" type="button" data-filter="all">全部</button>
+                    <button class="filter-btn" type="button" data-filter="雷切模型">雷切模型</button>
+                    <button class="filter-btn" type="button" data-filter="UI/UX">UI/UX</button>
+                    <button class="filter-btn" type="button" data-filter="網頁開發">網頁開發</button>
+                </div>
+                <div class="drag-cue">
+                    <span class="drag-cue-arrow">↔</span>
+                    Drag to navigate
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="projectModal" id="projectModal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <!-- <button class="modal-close" id="modalClose" type="button" aria-label="關閉">×</button> -->
+            <div class="modal-thumb" id="modalThumb"></div>
+            <p class="modal-tag" id="modalTag"></p>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-desc" id="modalDesc"></p>
+            <button class="modal-link" id="modalLink" type="button">查看作品</button>
+        </div>
+    </div>
+
+    <script src="./JS/header.js"></script>
+    <script>
+        const PROJECTS = [
+            {
+                title: '蔚藍護鯨網站', tag: '前端設計', desc: '本專案目標在於實作多頁式網頁，並深度應用 CSS 動畫與響應式排版進行數位敘事，推廣聯合國永續發展目標 (SDGs) 之「海洋生態」議題。我們相信環境教育應具備「早接軌、深紮根」的特性。因此，本站將目標群體鎖定於在學青年與校園組織，旨在將海洋保育觀念融入學生生活。網站針對鯨魚愛好者設計視覺專題，呈現海洋生物面臨的棲地困境，並提供具體的保育活動資訊與參與路徑，透過網頁互動設計將線上的關心轉化為線下的實際參與。',
+                imageSrc: './IMGS/indexIMGS/whaleWeb.png', link: './HTMLS/works/webDesign_whale.html', w: 320, h: 200
+            },
+            {
+                title: '女巫藥水:彈幕遊戲', tag: '網頁遊戲', desc: '本專案核心目標為運用 Phaser 遊戲引擎實作具備複雜彈幕演算法與即時互動性的 Web 遊戲。專案以經典 IP《東方 Project》為靈感，開發一套結合高效能渲染與動態敘事的縱向捲軸射擊系統。旨在將經典彈幕機制與現代 Web 技術融合，提升網頁端遊戲的互動深度，並實作完整的關卡循環與分數存儲系統。',
+                imageSrc: './IMGS/indexIMGS/witchGame.png', link: './HTMLS/works/webDesign_witch.html', w: 300, h: 300
+            },
+            {
+                title: '教育平台開發', tag: '前端與後端資料庫設計', desc: '本專案核心目標在於建構一個具備動態資料庫互動能力的全端應用，整合前後端通訊邏輯，並以聯合國 SDGs 4「優質教育」為議題導向，解決當前教育的資源分配不均問題。我們希望透過一個互動性高、資源豐富、容易取得的數學學習平台，打破學習障礙，讓不同背景的學生都能擁有接觸並掌握學習的機會。同時，也支援教師備課、設計教學活動，提升整體教學效能。',
+                imageSrc: './IMGS/indexIMGS/educationWeb.png', link: './HTMLS/works/webDesign_educationWeb.html', w: 320, h: 200
+            },
+            {
+                title: 'HappyGo Redesign', tag: 'UI/UX', desc: '針對 HAPPY GO App 的優化設計，本專案以「提升使用者消費體驗」為核心，透過系統化的介面重新排版，重點解決首頁資訊過載與功能路徑不明的問題，並藉由整合查詢按鈕、強化條碼放大與優化點數兌換流程，打造一個操作更為直覺、視覺美感與功能性兼具的點數管理工具。',
+                imageSrc: './IMGS/indexIMGS/happyGo-mockup.png', link: './HTMLS/works/UI&UX.html', w: 300, h: 250
+            },
+            {
+                title: '海克斯堡箱', tag: '雷切模型', desc: '本專案選取《英雄聯盟 (League of Legends)》中極具代表性的物件——「海克斯寶箱」進行實體化開發。透過數位建模與雷射切割技術，將虛擬遊戲物件轉化為具備互動性與工藝美感的立體裝置。',
+                imageSrc: './IMGS/indexIMGS/laserCutHaxBox.jpg', link: './HTMLS/works/laserCut_lootBox.html', w: 200, h: 200
+            },
+            {
+                title: '鋼琴收納盒', tag: '雷切模型', desc: '以鋼琴為主題作出一個桌上櫃子,收納部分為鋼琴內部做一個掀蓋式收納櫃和後方多做一個抽屜,做出可活動的機關。',
+                imageSrc: './IMGS/indexIMGS/paina_LC.jpg', link: './HTMLS/works/laserCut_paino.html', w: 200, h: 200
+            },
+            {
+                title: '巴黎鐵塔', tag: '雷切模型', desc: '外表原型為法國著名地標巴黎鐵塔，用木材與雷切技術製作的模型',
+                imageSrc: './IMGS/indexIMGS/tower_LC.jpg', link: './HTMLS/works/laserCut_tower.html', w: 120, h: 250
+            },
+            {
+                title: '熱氣球', tag: '雷切模型', desc: '外表原型為熱氣球，用木材與雷切技術製作的模型',
+                imageSrc: './IMGS/indexIMGS/hotBloon_LC.jpg', link: './HTMLS/works/laserCut_airBloom.html', w: 180, h: 200
+            },
+            {
+                title: '倫敦鐵橋', tag: '雷切模型', desc: '外表原型為英國著名地標倫敦鐵橋，用木材與雷切技術製作的模型',
+                imageSrc: './IMGS/indexIMGS/bridge_LC.jpg', link: './HTMLS/works/laserCut_bridge.html', w: 300, h: 150
+            },
+            {
+                title: '石藝燈', tag: '雷切模型', desc: '外表原型為日本庭院石藝燈，用木材與雷切技術製作的模型',
+                imageSrc: './IMGS/indexIMGS/stoneLamp_LC.jpg', link: './HTMLS/works/laserCut_stoneLamp.html', w: 150, h: 184
+            },
+            {
+                title: '旋轉木馬', tag: '雷切模型', desc: '外表原型為遊樂園旋轉木馬，用木材與雷切技術製作的模型',
+                imageSrc: './IMGS/indexIMGS/spinHouse_LC.jpg', link: './HTMLS/works/laserCut_spinHorse.html', w: 180, h: 200
+            },
+        ];
+
+        const board = document.getElementById('projectBoard');
+        const secProjects = document.getElementById('sec-projects');
+        const secStack = document.getElementById('sec-stack');
+        const secAbout = document.getElementById('sec-about');
+        const projectSearch = document.getElementById('projectSearch');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const modal = document.getElementById('projectModal');
+        const modalClose = document.getElementById('modalClose');
+        const FLOAT_NAMES = ['floatA', 'floatB', 'floatC', 'floatD', 'floatE', 'floatF', 'floatG', 'floatH'];
+        const KF_DATA = [
+            [[25, 6, -9], [50, -4, -14], [75, -8, -5]],
+            [[30, -7, -11], [60, 9, -7]],
+            [[40, 10, -8], [70, 3, -15]],
+            [[20, -10, -6], [55, 5, -13], [80, -3, -8]],
+            [[35, 8, -12], [65, -6, -10]],
+            [[45, -9, -14], [75, 7, -6]],
+            [[25, 12, -8], [60, -5, -16]],
+            [[30, -11, -7], [70, 6, -12]],
+        ];
+
+        const styleEl = document.createElement('style');
+        styleEl.textContent = FLOAT_NAMES.map((name, index) => {
+            const stops = KF_DATA[index].map(([pct, dx, dy]) =>
+                `${pct}% { transform: var(--base-t) translate(${dx}px, ${dy}px); }`
+            ).join('\n');
+            return `@keyframes ${name} {
+            0%,100% { transform: var(--base-t) translate(0, 0); }
+            ${stops}
+        }`;
+        }).join('\n');
+        document.head.appendChild(styleEl);
+
+        let viewportW = window.innerWidth;
+        let viewportH = window.innerHeight;
+        let wrapBuffer = Math.max(620, viewportW * 0.48);
+        let wrapW = viewportW + wrapBuffer * 2;
+        let wrapH = viewportH + wrapBuffer * 2;
+        let panX = 0;
+        let panY = 0;
+        let targetPanX = panX;
+        let targetPanY = panY;
+        let depth = 0;
+        let targetDepth = 0;
+        let filterProgress = 0;
+        let targetFilterProgress = 0;
+        let filteredProjects = [];
+        let activeFilter = 'all';
+        let activeQuery = '';
+        let interactive = false;
+        let dragging = false;
+        let didDrag = false;
+        let startPX = 0;
+        let startPY = 0;
+        let startTX = 0;
+        let startTY = 0;
+        let velX = 0;
+        let velY = 0;
+        let lastPX = 0;
+        let lastPY = 0;
+        let pressedCardIndex = null;
+
+        const MAX_DUPLICATES_PER_PROJECT = 2;
+        const CARD_COUNT = Math.min(14, PROJECTS.length + 3);
+        const cardProjects = Array.from({ length: CARD_COUNT }, (_, index) => PROJECTS[index % PROJECTS.length]);
+        const initialSpots = [
+            [-0.08, 0.18], [0.18, 0.14], [0.48, 0.08], [0.78, 0.16], [1.05, 0.28],
+            [-0.04, 0.54], [0.24, 0.42], [0.74, 0.44], [1.02, 0.58],
+            [0.12, 0.86], [0.38, 0.76], [0.66, 0.86], [0.92, 0.78], [1.1, 0.94],
+        ];
+
+        const cardMeta = cardProjects.map((project, index) => {
+            const spot = initialSpots[index % initialSpots.length];
+            return {
+                x: wrapBuffer + spot[0] * viewportW + (Math.random() - 0.5) * 220,
+                y: wrapBuffer + spot[1] * viewportH + (Math.random() - 0.5) * 170,
+                z: 0.12 + ((index * 0.29) % 0.36) + Math.random() * 0.05,
+                lastZ: null,
+                rot: (Math.random() - 0.5) * 10,
+                anim: FLOAT_NAMES[index % FLOAT_NAMES.length],
+                dur: 7 + Math.random() * 7,
+                delay: -(Math.random() * 8),
+                opacity: null,
+                zIndex: null,
+                canClick: null,
+            };
+        });
+
+        const cardMovers = cardProjects.map((project, index) => {
+            const meta = cardMeta[index];
+            const mover = document.createElement('button');
+            mover.className = 'pCard-mover';
+            mover.type = 'button';
+            mover.dataset.cardIndex = String(index);
+            mover.style.width = `${project.w}px`;
+            mover.style.height = `${project.h}px`;
+            mover.style.animation = `${meta.anim} ${meta.dur}s ease-in-out ${meta.delay}s infinite`;
+
+            const inner = document.createElement('span');
+            inner.className = 'pCard-inner';
+            inner.style.setProperty('--rot', `${meta.rot}deg`);
+
+            const visual = document.createElement(project.imageSrc ? 'img' : 'span');
+            if (project.imageSrc) {
+                visual.src = project.imageSrc;
+                visual.alt = project.title;
+                visual.decoding = 'async';
+                visual.loading = 'eager';
+            } else {
+                visual.className = 'pCard-placeholder';
+                visual.textContent = project.title;
+            }
+            inner.appendChild(visual);
+
+            const label = document.createElement('span');
+            label.className = 'pCard-label';
+            label.textContent = project.title;
+            inner.appendChild(label);
+
+            mover.appendChild(inner);
+            board.appendChild(mover);
+            return mover;
+        });
+
+        function pickProject() {
+            const usage = new Map(PROJECTS.map(project => [project.title, 0]));
+            cardProjects.forEach(project => {
+                usage.set(project.title, (usage.get(project.title) || 0) + 1);
+            });
+            const unusedProjects = PROJECTS.filter(project => (usage.get(project.title) || 0) === 0);
+            const availableProjects = PROJECTS.filter(project => (usage.get(project.title) || 0) < MAX_DUPLICATES_PER_PROJECT);
+            const pool = unusedProjects.length ? unusedProjects : availableProjects.length ? availableProjects : PROJECTS;
+            return pool[Math.floor(Math.random() * pool.length)];
+        }
+
+        function createProjectVisual(project) {
+            const visual = document.createElement(project.imageSrc ? 'img' : 'span');
+            if (project.imageSrc) {
+                visual.src = project.imageSrc;
+                visual.alt = project.title;
+                visual.decoding = 'async';
+                visual.loading = 'eager';
+            } else {
+                visual.className = 'pCard-placeholder';
+                visual.textContent = project.title;
+            }
+            return visual;
+        }
+
+        function setCardProject(index, project, sizeScale = 1) {
+            const meta = cardMeta[index];
+            cardProjects[index] = {
+                ...project,
+                w: Math.round(project.w * sizeScale),
+                h: Math.round(project.h * sizeScale),
+            };
+            meta.opacity = null;
+            meta.zIndex = null;
+            meta.canClick = null;
+
+            const mover = cardMovers[index];
+            const inner = mover.querySelector('.pCard-inner');
+            const label = inner.querySelector('.pCard-label');
+            const oldVisual = inner.querySelector('.pCard-placeholder, img');
+            const nextVisual = createProjectVisual(cardProjects[index]);
+            mover.style.width = `${cardProjects[index].w}px`;
+            mover.style.height = `${cardProjects[index].h}px`;
+            inner.style.setProperty('--rot', `${meta.rot}deg`);
+            if (oldVisual) inner.replaceChild(nextVisual, oldVisual);
+            else inner.insertBefore(nextVisual, label);
+            label.textContent = cardProjects[index].title;
+        }
+
+        function randomizeCard(index, spawnZ) {
+            const project = pickProject();
+            const meta = cardMeta[index];
+            const sizeScale = 0.64 + Math.random() * 0.28;
+            setCardProject(index, project, sizeScale);
+            meta.x = Math.random() * wrapW;
+            meta.y = Math.random() * wrapH;
+            meta.rot = (Math.random() - 0.5) * 10;
+            meta.z = depth + spawnZ;
+            meta.lastZ = spawnZ;
+        }
+
+        function updateWrapMetrics() {
+            wrapBuffer = Math.max(980, viewportW * 0.75);
+            wrapW = viewportW + wrapBuffer * 2;
+            wrapH = viewportH + wrapBuffer * 2;
+        }
+
+        function wrap(value, span) {
+            return ((value % span) + span) % span;
+        }
+
+        function smoothstep(edge0, edge1, value) {
+            const t = Math.max(0, Math.min(1, (value - edge0) / (edge1 - edge0)));
+            return t * t * (3 - 2 * t);
+        }
+
+        function fadeByDepth(z) {
+            const fadeIn = smoothstep(0.02, 0.18, z);
+            const fadeOut = 1 - smoothstep(0.86, 0.99, z);
+            return Math.min(0.92, fadeIn * fadeOut);
+        }
+
+        function cardOpacity(z, centerDistance) {
+            const baseOpacity = fadeByDepth(z);
+            if (!interactive) return baseOpacity * 0.42;
+            return Math.max(0.42, baseOpacity);
+        }
+
+        function isWebProject(project) {
+            return /網頁|前端|後端|Web|web/i.test(`${project.title} ${project.tag} ${project.desc}`);
+        }
+
+        function matchesFilter(project, filter) {
+            if (filter === 'all') return true;
+            if (filter === '網頁開發') return isWebProject(project);
+            return project.tag === filter;
+        }
+
+        function matchesQuery(project, query) {
+            if (!query) return true;
+            return `${project.title} ${project.tag} ${project.desc}`.toLowerCase().includes(query.toLowerCase());
+        }
+
+        function updateProjectFilter() {
+            filteredProjects = PROJECTS.filter(project =>
+                matchesFilter(project, activeFilter) && matchesQuery(project, activeQuery)
+            );
+            const shouldFilter = activeQuery.length > 0 || activeFilter !== 'all';
+            const wasFiltering = targetFilterProgress > 0;
+            if (shouldFilter && !wasFiltering) {
+                panX = 0;
+                panY = 0;
+                targetPanX = 0;
+                targetPanY = 0;
+            }
+            targetFilterProgress = shouldFilter ? 1 : 0;
+
+            filteredProjects.slice(0, cardMovers.length).forEach((project, index) => {
+                const resultScale = Math.min(1, 230 / Math.max(project.w, project.h));
+                setCardProject(index, project, resultScale);
+                cardMeta[index].rot = (index % 2 === 0 ? -1 : 1) * (1.2 + (index % 3));
+                cardMovers[index].querySelector('.pCard-inner').style.setProperty('--rot', `${cardMeta[index].rot}deg`);
+            });
+
+            board.classList.toggle('is-filtering', shouldFilter);
+            secProjects.classList.toggle('is-searching', shouldFilter);
+            render();
+        }
+
+        function clamp(value, min, max) {
+            return Math.max(min, Math.min(max, value));
+        }
+
+        function getFilterLayout(matchCount) {
+            const isMobile = viewportW < 700;
+            const rows = Math.min(matchCount || 1, isMobile ? 3 : 2);
+            const columns = Math.ceil((matchCount || 1) / rows);
+            const gapX = isMobile ? 245 : 380;
+            const gapY = isMobile ? 158 : 240;
+            const resultsTop = isMobile ? 285 : 335;
+            const resultScale = isMobile ? 0.64 : 0.82;
+            const maxCardW = Math.max(
+                0,
+                ...cardProjects.slice(0, matchCount).map(project => project.w * resultScale)
+            );
+            const contentWidth = (columns - 1) * gapX + maxCardW;
+            const visibleWidth = viewportW * (isMobile ? 0.74 : 0.84);
+            const maxPan = Math.max(0, (contentWidth - visibleWidth) / 2);
+
+            return { rows, columns, gapX, gapY, resultsTop, resultScale, minPan: -maxPan, maxPan };
+        }
+
+        function clampFilterPan() {
+            const matchCount = Math.min(filteredProjects.length, cardMovers.length);
+            const layout = getFilterLayout(matchCount);
+            targetPanX = clamp(targetPanX, layout.minPan, layout.maxPan);
+            panX = clamp(panX, layout.minPan, layout.maxPan);
+            targetPanY = 0;
+            panY = 0;
+        }
+
+        function render() {
+            const anchorRect = document.querySelector('.sec-projects-inner').getBoundingClientRect();
+            const anchorX = anchorRect.left + anchorRect.width / 2;
+            const anchorY = anchorRect.top + anchorRect.height / 2;
+            cardMovers.forEach((mover, index) => {
+                const meta = cardMeta[index];
+                let project = cardProjects[index];
+                let z = wrap(meta.z - depth, 1);
+                if (filterProgress > 0.001) {
+                    const matchCount = Math.min(filteredProjects.length, cardMovers.length);
+                    const isMatch = index < matchCount;
+                    const layout = getFilterLayout(matchCount);
+                    const { rows, columns, gapX, gapY, resultsTop } = layout;
+                    const col = Math.floor(index / rows);
+                    const row = index % rows;
+                    const startX = anchorX - ((columns - 1) * gapX) / 2;
+                    const targetX = startX + col * gapX + panX;
+                    const targetY = Math.min(viewportH - 95, resultsTop + row * gapY);
+                    const exitY = viewportH + 170 + (index % 5) * 34;
+                    const enterY = viewportH + 180 + row * 52;
+                    const p = filterProgress;
+                    const eased = p * p * (3 - 2 * p);
+                    const resultScale = isMatch ? layout.resultScale : 0.58;
+                    const x = isMatch ? targetX : anchorX + ((index % 7) - 3) * 90;
+                    const y = isMatch ? enterY + (targetY - enterY) * eased : anchorY + (exitY - anchorY) * eased;
+                    const opacity = isMatch ? eased : 1 - eased;
+                    mover.style.setProperty('--base-t', `translate3d(${x - project.w * resultScale / 2}px, ${y - project.h * resultScale / 2}px, 0) scale(${resultScale})`);
+                    mover.style.opacity = String(opacity);
+                    mover.style.pointerEvents = isMatch && opacity > 0.6 ? 'auto' : 'none';
+                    mover.style.zIndex = String(isMatch ? 220 + index : 20);
+                    return;
+                }
+                if (meta.lastZ !== null) {
+                    const movingForward = targetDepth >= depth;
+                    const wrappedForward = movingForward && meta.lastZ < 0.12 && z > 0.88;
+                    const wrappedBackward = !movingForward && meta.lastZ > 0.88 && z < 0.12;
+                    if (wrappedForward || wrappedBackward) {
+                        randomizeCard(index, movingForward ? 0.94 + Math.random() * 0.04 : 0.02 + Math.random() * 0.04);
+                        project = cardProjects[index];
+                        z = wrap(meta.z - depth, 1);
+                    }
+                }
+                meta.lastZ = z;
+
+                let baseX = meta.x + panX - wrapBuffer;
+                let baseY = meta.y + panY - wrapBuffer;
+                const scale = 0.18 + Math.pow(z, 1.42) * 1.38;
+                const spread = 0.18 + z * 1.48;
+                const scaledW = project.w * scale;
+                const scaledH = project.h * scale;
+                const edgeMargin = 24;
+
+                let cardCenterX = baseX + project.w / 2;
+                let cardCenterY = baseY + project.h / 2;
+                let relX = cardCenterX - anchorX;
+                let relY = cardCenterY - anchorY;
+                let zX = anchorX + relX * spread - scaledW / 2;
+                let zY = anchorY + relY * spread - scaledH / 2;
+
+                const recycleX = (viewportW + edgeMargin * 2 + scaledW) / Math.max(spread, 0.05);
+                const recycleY = (viewportH + edgeMargin * 2 + scaledH) / Math.max(spread, 0.05);
+                while (zX + scaledW < -edgeMargin) {
+                    meta.x += recycleX;
+                    baseX += recycleX;
+                    zX += recycleX * spread;
+                }
+                while (zX > viewportW + edgeMargin) {
+                    meta.x -= recycleX;
+                    baseX -= recycleX;
+                    zX -= recycleX * spread;
+                }
+                while (zY + scaledH < -edgeMargin) {
+                    meta.y += recycleY;
+                    baseY += recycleY;
+                    zY += recycleY * spread;
+                }
+                while (zY > viewportH + edgeMargin) {
+                    meta.y -= recycleY;
+                    baseY -= recycleY;
+                    zY -= recycleY * spread;
+                }
+                const projectedCenterX = zX + (project.w * scale) / 2;
+                const projectedCenterY = zY + (project.h * scale) / 2;
+                const centerDistance = Math.hypot(projectedCenterX - anchorX, projectedCenterY - anchorY);
+                const opacity = cardOpacity(z, centerDistance);
+                const nextZIndex = Math.round(z * 100);
+                const canClick = opacity > 0.18;
+                mover.style.setProperty('--base-t', `translate3d(${zX}px, ${zY}px, 0) scale(${scale})`);
+                if (meta.opacity === null || Math.abs(meta.opacity - opacity) > 0.015) {
+                    mover.style.opacity = String(opacity);
+                    meta.opacity = opacity;
+                }
+                if (meta.canClick !== canClick) {
+                    mover.style.pointerEvents = canClick ? 'auto' : 'none';
+                    meta.canClick = canClick;
+                }
+                if (meta.zIndex !== nextZIndex) {
+                    mover.style.zIndex = String(nextZIndex);
+                    meta.zIndex = nextZIndex;
+                }
+            });
+        }
+
+        function loop() {
+            if (targetFilterProgress > 0 || filterProgress > 0.001) {
+                clampFilterPan();
+            }
+            const dx = targetPanX - panX;
+            const dy = targetPanY - panY;
+            const dz = targetDepth - depth;
+            const df = targetFilterProgress - filterProgress;
+            if (Math.abs(dx) > 0.05 || Math.abs(dy) > 0.05 || Math.abs(dz) > 0.001 || Math.abs(df) > 0.001) {
+                panX += dx * 0.11;
+                panY += dy * 0.11;
+                depth += dz * 0.12;
+                filterProgress += df * 0.14;
+                if (Math.abs(depth) > 1000) {
+                    const normalizedDepth = wrap(depth, 1);
+                    targetDepth += normalizedDepth - depth;
+                    depth = normalizedDepth;
+                }
+                render();
+            }
+            requestAnimationFrame(loop);
+        }
+
+        function setInteractive(nextState) {
+            interactive = nextState;
+            board.classList.toggle('can-interact', interactive);
+            board.setAttribute('aria-hidden', String(!interactive));
+            if (!interactive) {
+                dragging = false;
+                board.classList.remove('dragging');
+            }
+        }
+
+        new IntersectionObserver(entries => {
+            const entry = entries[0];
+            setInteractive(entry.isIntersecting && entry.intersectionRatio >= 0.5);
+        }, { threshold: [0, 0.25, 0.5, 0.75] }).observe(secProjects);
+
+        if (secStack) {
+            const stackObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        secStack.classList.remove('stack-animate');
+                        void secStack.offsetWidth;
+                        secStack.classList.add('stack-animate');
+                    } else {
+                        secStack.classList.remove('stack-animate');
+                    }
+                });
+            }, { threshold: 0.35 });
+            stackObserver.observe(secStack);
+        }
+
+        if (secAbout) {
+            const aboutObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        secAbout.classList.remove('about-animate');
+                        void secAbout.offsetWidth;
+                        secAbout.classList.add('about-animate');
+                    } else {
+                        secAbout.classList.remove('about-animate');
+                    }
+                });
+            }, { threshold: 0.25 });
+            aboutObserver.observe(secAbout);
+        }
+
+        board.addEventListener('pointerdown', e => {
+            if (!interactive) return;
+            const pressedCard = e.target.closest('.pCard-mover');
+            pressedCardIndex = pressedCard ? Number(pressedCard.dataset.cardIndex) : null;
+            dragging = true;
+            didDrag = false;
+            startPX = e.clientX;
+            startPY = e.clientY;
+            startTX = targetPanX;
+            startTY = targetPanY;
+            lastPX = e.clientX;
+            lastPY = e.clientY;
+            velX = 0;
+            velY = 0;
+            board.setPointerCapture(e.pointerId);
+            board.classList.add('dragging');
+        });
+
+        board.addEventListener('pointermove', e => {
+            if (!dragging) return;
+            const dx = e.clientX - startPX;
+            const dy = e.clientY - startPY;
+            if (Math.abs(dx) > 4 || Math.abs(dy) > 4) didDrag = true;
+            velX = e.clientX - lastPX;
+            velY = e.clientY - lastPY;
+            lastPX = e.clientX;
+            lastPY = e.clientY;
+            if (targetFilterProgress > 0) {
+                const matchCount = Math.min(filteredProjects.length, cardMovers.length);
+                const layout = getFilterLayout(matchCount);
+                targetPanX = clamp(startTX + dx, layout.minPan, layout.maxPan);
+                targetPanY = 0;
+            } else {
+                targetPanX = startTX + dx;
+                targetPanY = startTY + dy;
+            }
+        });
+
+        function endDrag(e, shouldOpenCard = true) {
+            if (!dragging) return;
+            const cardIndexToOpen = pressedCardIndex;
+            dragging = false;
+            board.classList.remove('dragging');
+            if (targetFilterProgress > 0) {
+                const matchCount = Math.min(filteredProjects.length, cardMovers.length);
+                const layout = getFilterLayout(matchCount);
+                targetPanX = clamp(targetPanX + velX * 4, layout.minPan, layout.maxPan);
+                targetPanY = 0;
+            } else {
+                targetPanX += velX * 8;
+                targetPanY += velY * 8;
+            }
+            if (shouldOpenCard && !didDrag && cardIndexToOpen !== null) {
+                openModal(cardProjects[cardIndexToOpen]);
+            }
+            pressedCardIndex = null;
+            setTimeout(() => { didDrag = false; }, 80);
+        }
+
+        board.addEventListener('pointerup', e => endDrag(e, true));
+        board.addEventListener('pointercancel', e => endDrag(e, false));
+
+        window.addEventListener('wheel', e => {
+            if (!interactive || modal.classList.contains('open')) return;
+            if (targetFilterProgress > 0) return;
+            const wheelIntent = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+            if (wheelIntent < 0) return;
+            e.preventDefault();
+            targetDepth += Math.min(wheelIntent, 120) * 0.0018;
+        }, { passive: false });
+
+        function openModal(project) {
+            console.log("嘗試開啟中...");
+            if (!interactive) return;
+            document.getElementById('modalThumb').innerHTML = project.imageSrc
+                ? `<img src="${project.imageSrc}" alt="${project.title}">`
+                : `<div class="pCard-placeholder pCard-placeholder-modal">${project.title}</div>`;
+            document.getElementById('modalTag').textContent = project.tag;
+            document.getElementById('modalTitle').textContent = project.title;
+            document.getElementById('modalDesc').textContent = project.desc;
+            document.getElementById('modalLink').onclick = () => {
+                if (project.link !== '#') location.href = project.link;
+            };
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            console.log("嘗試關閉中...");
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        window.addEventListener('resize', () => {
+            viewportW = window.innerWidth;
+            viewportH = window.innerHeight;
+            updateWrapMetrics();
+            if (targetFilterProgress > 0 || filterProgress > 0.001) {
+                clampFilterPan();
+            }
+            render();
+        });
+
+        /*modalClose.addEventListener('click', closeModal);*/
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        projectSearch.addEventListener('input', e => {
+            activeQuery = e.target.value.trim();
+            updateProjectFilter();
+        });
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                activeFilter = button.dataset.filter;
+                updateProjectFilter();
+            });
+        });
+
+        render();
+        loop();
+    </script>
+</body>
+
+</html>

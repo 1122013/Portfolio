@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於 | 魏梓倫</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="headerBox">
+            <div class="headerAvatar" aria-hidden="true"></div>
+            <div class="headerNames">
+                <div class="headerNameCN">魏梓倫</div>
+                <div class="headerNameEN">WEI TZU-LUN</div>
+            </div>
+        </div>
+        <nav class="headerBox headerBars" aria-label="主要導覽">
+            <button class="headerBar" type="button" data-href="../index.html" data-page="首頁">首頁</button>
+            <button class="headerBar active" type="button" data-href="./about.html" data-page="關於">CV</button>
+            <button class="headerBar" type="button" data-href="../index.html#sec-projects" data-page="作品">Projects</button>
+            <button class="headerBar" type="button" data-href="./contact.html" data-page="聯絡">Contacts</button>
+        </nav>
+    </header>
+
+    <div class="bottomBar" id="bottomBar">
+        <button class="bottomBar-active" id="bottomActive" type="button">關於</button>
+        <button class="bottomBar-menu" id="menuToggle" type="button" aria-expanded="false">選單</button>
+    </div>
+    <nav class="mobileMenu" id="mobileMenu" aria-label="手機導覽">
+        <button class="menuItem" type="button" data-href="../index.html" data-page="首頁"><span>首頁</span><span class="menuIcon">01</span></button>
+        <button class="menuItem active" type="button" data-href="./about.html" data-page="關於"><span>關於</span><span class="menuIcon">02</span></button>
+        <button class="menuItem" type="button" data-href="../index.html#sec-projects" data-page="作品"><span>作品</span><span class="menuIcon">03</span></button>
+        <button class="menuItem" type="button" data-href="./contact.html" data-page="聯絡"><span>聯絡</span><span class="menuIcon">04</span></button>
+    </nav>
+
+    <script src="../JS/header.js"></script>
+</body>
+</html>
